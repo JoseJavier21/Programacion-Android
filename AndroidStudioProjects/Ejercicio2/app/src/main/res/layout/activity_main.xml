@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/imgfondomovil" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="5:55 min"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/floatingActionButton4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Bohemian Rhapsody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03A9F4"
+        android:insetTop="0dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Queen"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button12" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:insetBottom="0dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Opera Rock"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
+        app:layout_constraintEnd_toStartOf="@+id/button15"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="31 de octubre de 1975"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton4" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:clickable="true"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
