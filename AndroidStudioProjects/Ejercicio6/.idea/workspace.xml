@@ -9,16 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f18e96-ae9c-4093-be7a-f65be2fe65c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ejercicio2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/Ejercicio6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/Ejercicio6.app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyApplication/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyApplication2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MyApplication3/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyApplication2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyApplication2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyApplication3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyApplication3/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a8f18e96-ae9c-4093-be7a-f65be2fe65c0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +46,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ejercicio2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Prueba2" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
