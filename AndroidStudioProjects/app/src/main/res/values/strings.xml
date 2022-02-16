@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SpinnerEjercicioPrueba</string>
+
+    <array name="nombres">
+        <item>Manuel</item>
+        <item>Jose</item>
+        <item>Miguel</item>
+        <item>Julio</item>
+        <item>Jesus bruma</item>
+        <item>Jesus</item>
+    </array>
+</resources>
