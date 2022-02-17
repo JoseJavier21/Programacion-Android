@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/manobitcoin" />
+
+    <TextView
+        android:id="@+id/Bienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bienvenido "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/inversion"
+        app:layout_constraintEnd_toStartOf="@+id/nombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tu inversion sera de"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/importe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/Bienvenida" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="nombre"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/importe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Bienvenida"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/importe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="importe"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/inversion"
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    <Button
+        android:id="@+id/cambiodeinversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Cambiar Inversion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inversion" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:srcCompat="@drawable/ic_baseline_message_24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

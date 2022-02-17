@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">1ProyectoConversion</string>
+
+   <array name="monedas_juegos">
+       <item>Monedas de oro</item>
+       <item>Rupias</item>
+       <item>Créditos</item>
+       <item>Gil</item>
+       <item>Aros</item>
+       <item>Bananas</item>
+   </array>
+</resources>
