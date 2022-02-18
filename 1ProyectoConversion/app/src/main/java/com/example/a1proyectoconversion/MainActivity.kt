@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         binding.spinner1.setOnClickListener {
 
 
-
+        }
 
 
     //      Cambiar icono de moneda     //
