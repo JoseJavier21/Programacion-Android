@@ -49,7 +49,7 @@
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/primeramoneda"
+        app:layout_constraintStart_toEndOf="@+id/preview1"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo1" />
 
     <EditText
@@ -60,10 +60,21 @@
         android:ems="10"
         android:hint="Introducir Importe"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/spinner1"
+        app:layout_constraintEnd_toStartOf="@+id/preview1"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo1" />
+
+    <ImageView
+        android:id="@+id/preview1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/primeramoneda"
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo1"
+        app:srcCompat="@drawable/rupiazelda" />
 
     <TextView
         android:id="@+id/subtitulo2"
@@ -89,8 +100,19 @@
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/segundamoneda"
+        app:layout_constraintStart_toEndOf="@+id/preview2"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo2" />
+
+    <ImageView
+        android:id="@+id/preview2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/segundamoneda"
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo2"
+        app:srcCompat="@drawable/rupiazelda" />
 
     <EditText
         android:id="@+id/segundamoneda"
@@ -100,10 +122,11 @@
         android:ems="10"
         android:hint="Introducir Importe"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintEnd_toStartOf="@+id/preview2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitulo2" />
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/convertir"
