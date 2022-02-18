@@ -43,12 +43,13 @@ class MainActivity : AppCompatActivity() {
     //      Primer eleccion de moneda        //
 
         val monedaoro = 1
-        val aro = 5
+        val rupia = 5
+        val credito = 2
+        val gil = 4
+        val aro = 6
+        val banara =  3
         binding.spinner1.setOnClickListener {
 
-            val cambio = monedaoro + aro
-
-        }
 
 
 
