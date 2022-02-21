@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">1ProyectoConversion</string>
+    <string name="app_name">Conversor</string>
 
    <array name="monedas_juegos">
        <item>Monedas de oro</item>

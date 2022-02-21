@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/javier.rojo/Documents/GitHub/Programacion-Android/1ProyectoConversion/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/1ProyectoConversion/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.33" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/1ProyectoConversion/app/src/main/res/drawable/imagen.xml" value="0.162" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/1ProyectoConversion/app/src/main/res/layout/activity_main.xml" value="0.5744791666666667" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/1ProyectoConversion/app/src/main/res/mipmap-anydpi-v26/icono_round.xml" value="0.567" />
       </map>
     </option>
   </component>
