@@ -42,18 +42,6 @@ class MainActivity : AppCompatActivity() {
 
     //      Boton para compartir      //
 
-        binding.compartir.setOnClickListener {
-
-            try {
-                val uri = Uri.parse("twitter://user?screen_name=escuelaestech")
-                val intent = Intent(Intent.ACTION_VIEW, uri)
-                startActivity(intent)
-            } catch (e: Exception) {
-                val uri = Uri.parse("https://twitter.com/escuelaestech")
-                val intent = Intent(Intent.ACTION_VIEW, uri)
-                startActivity(intent)
-            }
-        }
 
 
 
