@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NavegadorWebView</string>
+
+    <array name="desplegable">
+        <item>compartir</item>
+    </array>
+</resources>
