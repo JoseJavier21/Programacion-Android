@@ -42,15 +42,15 @@
         android:id="@+id/spinner1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
         android:background="#E4A1A1"
         android:entries="@array/monedas_juegos"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/preview1"
-        app:layout_constraintTop_toBottomOf="@+id/subtitulo1" />
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo1"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/primeramoneda"
@@ -60,19 +60,18 @@
         android:ems="10"
         android:hint="Introducir Importe"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/preview1"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitulo1" />
+        app:layout_constraintTop_toBottomOf="@+id/preview1"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/preview1"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/spinner1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/primeramoneda"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo1"
         app:srcCompat="@drawable/rupiazelda" />
 
@@ -80,7 +79,7 @@
         android:id="@+id/subtitulo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="50dp"
         android:text="Segunda Moneda"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -92,56 +91,40 @@
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
         android:background="#E4A1A1"
         android:dropDownSelector="#E4A1A1"
         android:entries="@array/monedas_juegos"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/preview2"
-        app:layout_constraintTop_toBottomOf="@+id/subtitulo2" />
+        app:layout_constraintTop_toBottomOf="@+id/subtitulo2"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/preview2"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toStartOf="@+id/spinner2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/segundamoneda"
-        app:layout_constraintTop_toBottomOf="@+id/subtitulo2"
-        app:srcCompat="@drawable/rupiazelda" />
-
-    <EditText
-        android:id="@+id/segundamoneda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Introducir Importe"
-        android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/preview2"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtitulo2"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:srcCompat="@drawable/rupiazelda" />
 
     <Button
         android:id="@+id/convertir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:backgroundTint="#8BC34A"
         android:paddingLeft="25dp"
         android:paddingTop="20dp"
         android:paddingRight="25dp"
         android:paddingBottom="20dp"
         android:text="Convertir Monedas"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -154,20 +137,23 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Resultado"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_500"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toBottomOf="@+id/convertir" />
 
     <TextView
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="200"
-        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:hint="200"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -175,11 +161,12 @@
         android:id="@+id/gif"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:src="@drawable/darthvader"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/compartir"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/resultado"
-        android:src="@drawable/sonic" />
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/compartir"
@@ -190,6 +177,16 @@
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_baseline_share_24" />
+        app:srcCompat="@drawable/ic_baseline_share_24"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/modo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/compartir"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

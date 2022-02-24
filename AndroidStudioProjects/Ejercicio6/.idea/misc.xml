@@ -3,17 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/circulo.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/cuadrado.xml" value="0.4185" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/difuminado.xml" value="0.554" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/fondorojo.xml" value="0.4185" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/drawable/ic_launcher_background.xml" value="0.567" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/layout/activity_main.xml" value="0.42617753623188404" />
-        <entry key="..\:/Users/Jose/AndroidStudioProjects/Ejercicio6/app/src/main/res/layout/cerdo.xml" value="0.42527173913043476" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AndroidStudioProjects/Ejercicio6/app/src/main/res/layout/cerdo.xml" value="0.5744791666666667" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AndroidStudioProjects/Ejercicio6/app/src/main/res/layout/ejerciciocoversor.xml" value="0.5744791666666667" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AndroidStudioProjects/Ejercicio6/app/src/main/res/layout/login.xml" value="0.5744791666666667" />
       </map>
     </option>
   </component>
