@@ -4,6 +4,9 @@ import android.content.DialogInterface
 import android.content.DialogInterface.OnMultiChoiceClickListener
 import android.graphics.Color
 import android.os.Bundle
+import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Looper
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -25,13 +28,57 @@ class MainActivity : AppCompatActivity() {
         binding.dialog1.setOnClickListener { dialogNormal() }
         binding.dialog2.setOnClickListener { dialogListado() }
         binding.dialog3.setOnClickListener { dialogListadoCheckBox() }
-        binding.dialog4.setOnClickListener { dialogListadoOpciones() }
+//        binding.dialog4.setOnClickListener { dialogListadoOpciones() }
         binding.dialog5.setOnClickListener { customDialog() }
+
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+                Toast.makeText(this, "mesaje que aparece a los segundos", Toast.LENGTH_SHORT).show()
+            }, 3000 )
     }
 
     private fun dialogNormal() {
-
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Mensaje de error")
+        builder.setMessage("algo no va bien")
+        builder.setPositiveButton("Aceptar", { dialogInterface, i ->
+            "espacio  para poner el mensaje o mas codigo que se muestre"
+        })
+        builder.setNegativeButton("Negar", null)
+        builder.setNeutralButton("Neutral", {dialogInterface, i ->
+            Toast.makeText(this, "hola mundo", Toast.LENGTH_SHORT).show()
+        })
+        val dialog = builder.create()
+        dialog.setCanceledOnTouchOutside(true)
+        dialog.show()
     }
+
+    private fun Handler(){
+        val handler = Handler(Looper.getMainLooper())
+
+        Handler(Looper.getMainLooper()).postDelayed(
+            {
+                Toast.makeText(this, "mesaje que aparece a los segundos", Toast.LENGTH_SHORT).show()
+            }, 3000 )
+        handler.removeCallbacks(null)
+    }
+
+    private fun timer()
+    {
+        val timer = object: CountDownTimer(5000, 1000) {
+            override fun onTick(millisUntilFinished: Long) {
+                val segundo = millisUntilFinished / 1000
+                binding.tvOpcion.text = (segundo.toString())
+            }
+
+            override fun onFinish() {
+
+            }
+        }
+        timer.start()
+    }
+
+
 
     private fun dialogListado() {
         val builder = AlertDialog.Builder(this)
@@ -48,15 +95,15 @@ class MainActivity : AppCompatActivity() {
         dialog.show()
     }
 
-    private fun dialogListadoCheckBox() {
+    private fun dialogListadoRadioButom() {
         var opcionSeleccionada = 1
 
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Elige un color")
-        builder.setSingleChoiceItems(R.array.arrayColors, 1, { dialog, which ->
+        builder.setSingleChoiceItems(R.array.arrayColors, 1) { dialog, which ->
             opcionSeleccionada = which
             Toast.makeText(this@MainActivity, "Item $which", Toast.LENGTH_SHORT).show()
-        })
+        }
         builder.setNegativeButton("Cancelar", null)
         builder.setPositiveButton("Aceptar") { dialogInterface, i ->
             val array = resources.getStringArray(R.array.arrayColors)
@@ -67,7 +114,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun dialogListadoOpciones() {
+    private fun dialogListadoCheckBox() {
         val myArray = resources.getStringArray(R.array.arrayColors)
         val arrayResult = mutableListOf<String>()
 
@@ -103,6 +150,8 @@ class MainActivity : AppCompatActivity() {
         }
         builder.setNegativeButton("Cancelar") { dialog, which ->
             Toast.makeText(this@MainActivity, "Se ha cancelado", Toast.LENGTH_SHORT).show()
+
+
         }
         val dialog = builder.create()
         dialog.show()
@@ -123,4 +172,7 @@ class MainActivity : AppCompatActivity() {
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(this, R.color.white))
         dialog.getButton(AlertDialog.BUTTON_POSITIVE).setBackgroundColor(Color.BLUE)*/
     }
+
+
+
 }

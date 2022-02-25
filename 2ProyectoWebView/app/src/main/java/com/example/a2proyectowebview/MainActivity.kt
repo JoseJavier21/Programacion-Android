@@ -1,9 +1,12 @@
 package com.example.a2proyectowebview
 
 import android.app.Activity
+import android.content.Intent
+import android.graphics.Bitmap
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
@@ -28,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         val ajustes = binding.webView.settings
 
-        ajustes.displayZoomControls = true
+        ajustes.displayZoomControls = false
         ajustes.builtInZoomControls = true
         ajustes.javaScriptEnabled = true
         ajustes.disabledActionModeMenuItems
@@ -36,12 +39,34 @@ class MainActivity : AppCompatActivity() {
     }
 
     inner class MyBrowser : WebViewClient() {
-        override fun shouldOverrideUrlLoading(view: WebView?,
+        override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
+            binding.urlview.urls
 
-         request: WebResourceRequest?): Boolean {
+            val uri = request?.url
+            val host = uri?.host
+            if (host == "escuelaestech.es") {
+                return false
+            } else {
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                startActivity(intent)
+                return true
+            }
+        }
+        override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
+            super.onPageStarted(view, url, favicon)
 
-         return super.shouldOverrideUrlLoading(view, request)
+            binding.progressBar.visibility = View.VISIBLE
+
+
+        }
+
+        override fun onPageFinished(view: WebView?, url: String?) {
+            super.onPageFinished(view, url)
+
+            binding.progressBar.visibility = View.GONE
         }
     }
+
+
 
 }
