@@ -1,0 +1,89 @@
+-La variable VAl es una constante fija, una vez que le des un valor no se puede cambiar a lo largo del programa;
+en cambio la variable var si que deja cambiar a posteriori.
+
+-Los 'atributos INT, LONG, SHORT' su diferencia es la capacidad de almacenamiento que puede tener cada uno,
+el short no puede almacenar mas de 8 bits y se va aumentado segun long e int.
+
+-Las comas flotantes son el 'double' y el 'float', 
+
+-Los booleanos 
+
+-Caracteres
+
+-Strings se pondrian con comillas dobles o en si lo podemos forzar poniendo en la varibale 'string',
+
+
+PASAR A LIMPIO: // ESTO VIENE DEL EJECUTABLE DE KOTLIN NAVEGADOR//
+
+  val a = 2
+    val b: int = 5
+	val c: int
+    
+    c = 12
+    
+    //El long y el short es igual que el int pero lo diferente es la cantidad de espacio que ocupa//
+    val d = Long  = 5L
+    val e = short = 6 
+    
+    val f: float = 32.14562341//solo puede tener hasta 6 digitos, si es mas te lo trunca.
+    val g: float = 26.1541644563//solo puede tener hasta 16 digitos.
+    
+    val h: Boolean = false
+    val y: Boolean =true
+    
+    val j: Boolean = (y && j)
+
+    val letra = 'a'
+    val letra2 = Char
+    val unicode = '\ua432'
+    println(unicode)
+    
+    
+    val letra = "Hola mundo"
+    val letramayus = letra.uppercase()
+    
+    val frase = "hey"    
+    val palabra = frase[0]
+    
+    for( letra in frase){
+        println(letra)
+    }
+     
+    val millon: int = 2_000_000
+    println(millon)
+    val bytes = 101010_1110101_010010
+    
+    
+    val texto = """ pruebba de texto y que 
+    puede hacaer cualquier caraceter & y saltos de
+    linea incluso el 	tabulador"""
+    
+    
+    val diez = 10
+    val once = 11
+    val doce = 12
+    print( "i = $diez")
+    println("diez = $diez once = $once doce = $doce")
+
+    println("la suma es ${diez + once}")
+    
+    
+     val x: Double = 10.55
+    val n = x.toInt()     
+    
+    println(x)
+    
+    val mil= 1000
+    val enBytes = mil.toBytes()
+    println(enBytes)
+    
+    var uno = 1
+    uno++ || ++uno
+	println(uno)
+    
+    var dos = 2
+    dos-- || --dos
+    println(dos)
+    
+   dos = dos.inc()
+    
