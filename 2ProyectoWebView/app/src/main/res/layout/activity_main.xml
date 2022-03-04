@@ -132,6 +132,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:indeterminate="true"
+        android:progressTint="#03A9F4"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@id/webView"
         app:layout_constraintEnd_toEndOf="parent"

@@ -15,8 +15,6 @@ class Myadaptador(val lista: MutableList<String>): RecyclerView.Adapter<Myadapta
 
         init {
             textView = view.findViewById(R.id.holder_name)
-
-
         }
     }
 
