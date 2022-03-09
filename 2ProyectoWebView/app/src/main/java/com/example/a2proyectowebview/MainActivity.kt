@@ -1,19 +1,16 @@
 package com.example.a2proyectowebview
 
-import android.app.Activity
 import android.app.AlertDialog
-import android.app.Dialog
 import android.content.DialogInterface
-import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import com.example.a2proyectowebview.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
