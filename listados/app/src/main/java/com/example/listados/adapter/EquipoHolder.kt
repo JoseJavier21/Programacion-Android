@@ -1,23 +1,14 @@
 package com.example.listados.adapter
 
-public class Equipoadapter(listado: Mutablelist<>): RecyclerVIew.Adapter<equipoHolder>(){
+import androidx.recyclerview.widget.RecyclerView
+import com.example.listados.Equipo
+import com.example.listados.databinding.ContenedorBinding
 
-    override fun onCreateVIewHolder(){
+class EquipoHolder(val binding: ContenedorBinding): RecyclerView.ViewHolder(binding.root){
 
-        val layout.inflater = LayoutInflater.from(parent.context)
-        val binding = ContenedorBinding.inflate(layoutInflater, parent, false)
-        return equipoHolder(binding)
+    fun setMyData(team: Equipo) {
+        binding.textView.text = team.equipo
+        binding.textView2.text = team.nombre
+        binding.textView3.text = team.color
     }
-
-    override fun onBinViewHolder(){
-
-        val equipo = listado[position]
-        holder.setMyData(jugador)
-
-        holder.binding.holderName.text = jugador.nombre
-    }
-
-    override fun getItemCount() = listado.size
-
-
 }
