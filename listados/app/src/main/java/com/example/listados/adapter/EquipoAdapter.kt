@@ -1,23 +1,33 @@
 package com.example.listados.adapter
 
-class Equipoadapter(val listado: Mutablelist<Equipo>): RecyclerVIew.Adapter<EquipoHolder>(){
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.listados.Equipo
+import com.example.listados.databinding.ContenedorBinding
 
-    override fun onCreateVIewHolder(){
+class EquipoAdapter(val lista: MutableList<Equipo>): RecyclerView.Adapter<EquipoHolder>(){
 
-        val layout.inflater = LayoutInflater.from(parent.context)
-        val binding = ContenedorBinding.inflate(layoutInflater, parent, false)
-        return equipoHolder(binding)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EquipoHolder {
+        val mostrar = LayoutInflater.from(parent.context)
+        val vista = ContenedorBinding.inflate(mostrar, parent, false)
+        val posicion = EquipoHolder(vista)
+        return posicion
     }
 
-    override fun onBinViewHolder(){
+    override fun onBindViewHolder(holder: EquipoHolder, position: Int) {
 
-        val equipo = listado[position]
-        holder.setMyData(jugador)
-
-        holder.binding.holderName.text = jugador.nombre
+        val team = lista[position]
+        holder.setMyData(team)
     }
 
-    override fun getItemCount() = listado.size
+    override fun getItemCount() =lista.size
 
-
+    fun addteam(team: Equipo) {
+        lista.add(team)
+        notifyDataSetChanged()
+    }
 }
+
+
+
