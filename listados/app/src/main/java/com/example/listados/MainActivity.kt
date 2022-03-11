@@ -1,8 +1,13 @@
 package com.example.listados
 
+import android.app.Activity
+import android.app.Instrumentation
+import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -24,10 +29,7 @@ class MainActivity : AppCompatActivity() {
         val equipo4 = Equipo("Ferrari", "Leclert", "Rojo")
         val equipo5 = Equipo("Alfa-Romeo", "Hass", "Rosa")
 
-        val equipos = mutableListOf(equipo1,equipo2,equipo3,equipo4,equipo5)
-
-//        val columnas = GridLayoutManager(this, 3)
-//        val llamada = LinearLayoutManager(this)
+        val equipos = mutableListOf(equipo1, equipo2, equipo3, equipo4, equipo5)
 
 
         val llamada = LinearLayoutManager(this)
@@ -39,7 +41,37 @@ class MainActivity : AppCompatActivity() {
         binding.mas.setOnClickListener {
 
         }
+
+        binding.alldel.setOnClickListener {
+
+        }
+
+
+
+
+        // CODIGO PARA CONSEGUIR INFO DE LA SEGUNDA ACTIVIDAD, HAY QUE ADAPTARLO    //
+
+//        val intent = Intent(this, SegundaActivity::class.java)
+//        funReciberesult.launch(intent)
+
     }
+
+    // CODIGO PARA CONSEGUIR INFO DE LA SEGUNDA ACTIVIDAD, HAY QUE ADAPTARLO    //
+
+
+//    val funReciberesult =
+//        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { resultado ->
+//
+//            if (resultado.resultCode == Activity.RESULT_OK) {
+//
+//                val intent = resultado.data
+//
+//                if (intent != null) {
+//                    val datos = intent.getStringExtra("datos")
+//                }
+//            }
+//        }
 }
+
 
 
