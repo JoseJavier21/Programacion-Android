@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.activity.result.contract.ActivityResultContract
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
@@ -13,65 +14,86 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.listados.adapter.EquipoAdapter
 import com.example.listados.databinding.ActivityMainBinding
+import com.example.listados.databinding.ActivitySecondBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private lateinit var adapter: EquipoAdapter
+
+    private  lateinit var equipos: MutableList<Equipo>
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+//        setSupportActionBar(binding.toolbar)
         setContentView(binding.root)
 
-
-        val equipo1 = Equipo("Mclaren", "Carlos Sainz", "naranja")
-        val equipo2 = Equipo("RedBull", "Verstappen", "Azul")
-        val equipo3 = Equipo("Mercedes", "Hamilton", "Verde")
-        val equipo4 = Equipo("Ferrari", "Leclert", "Rojo")
-        val equipo5 = Equipo("Alfa-Romeo", "Hass", "Rosa")
-
-        val equipos = mutableListOf(equipo1, equipo2, equipo3, equipo4, equipo5)
+        // Para el titulo de el menu
+        supportActionBar?.setTitle("Equipos de F1")
+//        supportActionBar?.setDisplayHomeAsUpEnabled(true)"
 
 
-        val llamada = LinearLayoutManager(this)
-        binding.recyclerView.layoutManager = llamada
-        val adapter = EquipoAdapter(equipos)
-        binding.recyclerView.adapter = adapter
+        val equipo1 = Equipo(12, "Carlos Sainz", "naranja")
+        val equipos = mutableListOf(equipo1)
 
 
-        binding.mas.setOnClickListener {
 
+        val recyclerView = binding.recyclerView
+        val llm = LinearLayoutManager(this)
+        recyclerView.layoutManager = llm
+        adapter = EquipoAdapter(equipos)
+        recyclerView.adapter = adapter
+
+
+        // Boton para ir a la actividad para rellenar los datos
+        binding.relleno.setOnClickListener {
+           getResult.launch(Intent(this, SegundaActivity::class.java))
         }
-
-        binding.alldel.setOnClickListener {
-
-        }
-
-
-
-
-        // CODIGO PARA CONSEGUIR INFO DE LA SEGUNDA ACTIVIDAD, HAY QUE ADAPTARLO    //
-
-//        val intent = Intent(this, SegundaActivity::class.java)
-//        funReciberesult.launch(intent)
 
     }
 
-    // CODIGO PARA CONSEGUIR INFO DE LA SEGUNDA ACTIVIDAD, HAY QUE ADAPTARLO    //
+    // Para borrar elementos del listado
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId){
+            R.id.deleteall -> {
+                adapter.lista.clear()
+                adapter.notifyDataSetChanged()
+                true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+
+    }
 
 
-//    val funReciberesult =
-//        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { resultado ->
-//
-//            if (resultado.resultCode == Activity.RESULT_OK) {
-//
-//                val intent = resultado.data
-//
-//                if (intent != null) {
-//                    val datos = intent.getStringExtra("datos")
-//                }
-//            }
-//        }
+    // Para recoger los datos de la otra actividad y poder usarlos en esta
+    val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult())
+    { datos ->
+        var result_datos = 3;
+
+        when (datos.resultCode){
+
+            result_datos->{
+
+                val team1 = datos.data?.getIntExtra("equipo", 0)
+                val name = datos.data?.getStringExtra("nombre")
+                val col = datos.data?.getStringExtra("color")
+                equipos.add(Equipo(team1!!, name!!, col!!))
+                adapter.notifyItemChanged(equipos.size-1)
+            }
+            RESULT_CANCELED->{
+
+                //NADA//
+            }
+
+
+        }
+
+    }
 }
+
 
 
 

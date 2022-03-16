@@ -18,13 +18,23 @@ class SegundaActivity: AppCompatActivity() {
 
         //  Terminar, cambiar variables para que sean las mias y que se pueda usar  //
 
-        setResult(Activity.RESULT_OK)
+        binding.anadir.setOnClickListener {
 
-        val intent = Intent()
-        intent.putExtra("datos", "mis datos")
-        setResult(Activity.RESULT_OK, intent)
+            val intent = Intent()
+            intent.putExtra("equipo", binding.equipo.toString().toInt())
+            intent.putExtra("nombre", binding.nombre.text.toString())
+            intent.putExtra("color",  binding.color.text.toString())
+            setResult( 3,intent)
+            finish()
+
+        }
+
+
+
+
 
 
     }
 
 }
+

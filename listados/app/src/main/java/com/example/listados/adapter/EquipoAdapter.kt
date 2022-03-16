@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.listados.Equipo
 import com.example.listados.databinding.ContenedorBinding
+import kotlin.text.toInt as toInt1
 
 class EquipoAdapter(val lista: MutableList<Equipo>): RecyclerView.Adapter<EquipoHolder>(){
 
@@ -16,18 +17,34 @@ class EquipoAdapter(val lista: MutableList<Equipo>): RecyclerView.Adapter<Equipo
     }
 
     override fun onBindViewHolder(holder: EquipoHolder, position: Int) {
-
         val team = lista[position]
-        holder.setMyData(team)
+//        holder.binding.Txtv1.toString().toInt() = team.equipo
+        holder.binding.Txtv2.text = team.nombre
+        holder.binding.Txtv3.text = team.color
+
+        // Boton de borrado
+        holder.binding.borrar.setOnClickListener {
+            deleteItem(position)
+            true
+        }
     }
 
-    override fun getItemCount() =lista.size
-
-    fun addteam(team: Equipo) {
-        lista.add(team)
-        notifyDataSetChanged()
+    // Para eliminar elemetos de la lista
+    fun deleteItem(position: Int){
+        if (position < lista.size){
+            lista.removeAt(position)
+            notifyItemRemoved(position)
+            notifyItemRangeChanged(position,lista.size)
+        }
     }
+
+    // Longitud del listado
+    override fun getItemCount(): Int {
+        return lista.size
+    }
+
 }
+
 
 
 

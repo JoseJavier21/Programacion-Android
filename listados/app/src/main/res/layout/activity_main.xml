@@ -16,68 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/equipos"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Equipo"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/pilotos"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline2" />
-
-    <EditText
-        android:id="@+id/pilotos"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Piloto"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toStartOf="@+id/color"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/equipos"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <EditText
-        android:id="@+id/color"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:ems="10"
-        android:hint="Color"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/pilotos"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
     <Button
-        android:id="@+id/mas"
+        android:id="@+id/relleno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#F44336"
-        android:text="Añadir"
-        app:layout_constraintBottom_toTopOf="@+id/alldel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pilotos" />
-
-    <Button
-        android:id="@+id/alldel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#F44336"
-        android:text="eliminar todo"
+        android:text="Rellenar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mas" />
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -85,4 +34,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.75" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
