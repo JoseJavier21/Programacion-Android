@@ -1,4 +1,4 @@
-package com.example.menuinferior
+package com.example.aplifranavigation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
