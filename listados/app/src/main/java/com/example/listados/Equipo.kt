@@ -1,4 +1,4 @@
 package com.example.listados
 
-data class Equipo(val nombre: String, val equipo: String, val color: String)
+data class Equipo(val equipo: Int, val nombre: String, val color: String)
 

@@ -24,7 +24,7 @@
             android:background="#9CB8B8B8">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/Txtv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -36,18 +36,18 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/Txtv2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:text="TextView"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/textView"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintStart_toEndOf="@+id/Txtv1"
+                app:layout_constraintTop_toBottomOf="@+id/Txtv1" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/Txtv3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
@@ -55,8 +55,8 @@
                 android:text="TextView"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintStart_toEndOf="@+id/Txtv2"
+                app:layout_constraintTop_toBottomOf="@+id/Txtv2" />
 
             <ImageButton
                 android:id="@+id/borrar"
