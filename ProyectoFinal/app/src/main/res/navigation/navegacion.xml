@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.proyectofinal.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.example.proyectofinal.inicio"
+        android:label="fragment_inicio"
+        tools:layout="@layout/fragment_inicio" >
+        <action android:id="@+id/action_inicio_to_mainActivity" />
+        <action
+            android:id="@+id/action_inicio_to_pilotos"
+            app:destination="@id/pilotos"
+            app:popUpTo="@id/inicio" />
+        <action
+            android:id="@+id/action_inicio_to_circuitos"
+            app:destination="@id/circuitos"
+            app:popUpTo="@id/inicio" />
+        <action
+            android:id="@+id/action_inicio_to_contacto"
+            app:destination="@id/contacto"
+            app:popUpTo="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/pilotos"
+        android:name="com.example.proyectofinal.Pilotos"
+        android:label="fragment_pilotos"
+        tools:layout="@layout/fragment_pilotos" />
+    <fragment
+        android:id="@+id/circuitos"
+        android:name="com.example.proyectofinal.circuitos"
+        android:label="fragment_circuitos"
+        tools:layout="@layout/fragment_circuitos" />
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.example.proyectofinal.contacto"
+        android:label="fragment_contacto"
+        tools:layout="@layout/fragment_contacto" />
+</navigation>
