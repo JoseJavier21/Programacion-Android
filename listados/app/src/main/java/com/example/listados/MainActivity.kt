@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     private  lateinit var equipos: MutableList<Equipo>
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
 //        setSupportActionBar(binding.toolbar)
