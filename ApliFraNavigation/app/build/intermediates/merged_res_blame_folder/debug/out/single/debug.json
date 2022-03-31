@@ -1,0 +1,110 @@
+[
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_view_list_24.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_baseline_view_list_24.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\menu_menu.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\menu\\menu.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_acercade.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_acercade.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\navigation_navegacion.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\navigation\\navegacion.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_info.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_info.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_web_24.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_baseline_web_24.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_bienvenida.jpg.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\bienvenida.jpg"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_listado.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_listado.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_webview.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_webview.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_info_24.xml.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\drawable\\ic_baseline_info_24.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    }
+]

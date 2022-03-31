@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_listado.xml",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_listado.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_info.xml",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_info.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_webview.xml",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_webview.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_acercade.xml",
+        "source": "C:\\onedrive\\Documentos\\GitHub\\Programacion-Android\\ApliFraNavigation\\app\\src\\main\\res\\layout\\fragment_acercade.xml"
+    }
+]
