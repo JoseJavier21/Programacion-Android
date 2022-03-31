@@ -10,9 +10,6 @@ import com.example.proyectofinal.databinding.FragmentInicioBinding
 class inicio : Fragment() {
 
     private lateinit var binding: FragmentInicioBinding
-    private var param1: String? = null
-    private var param2: String? = null
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,10 +22,5 @@ class inicio : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        binding.buttonFirst.setOnClickListener {
-//            Toast.makeText(requireContext(), "Hola", Toast.LENGTH_SHORT).show()
-//        }
     }
-
-
-    }
+}

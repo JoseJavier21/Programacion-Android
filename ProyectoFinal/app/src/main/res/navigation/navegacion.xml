@@ -5,6 +5,21 @@
     android:id="@+id/navegacion"
     app:startDestination="@id/inicio">
     <fragment
+        android:id="@+id/circuitos"
+        android:name="com.example.proyectofinal.circuitos"
+        android:label="fragment_circuitos"
+        tools:layout="@layout/fragment_circuitos" />
+    <fragment
+        android:id="@+id/contacto"
+        android:name="com.example.proyectofinal.contacto"
+        android:label="fragment_contacto"
+        tools:layout="@layout/fragment_contacto" />
+    <fragment
+        android:id="@+id/pilotos"
+        android:name="com.example.proyectofinal.Pilotos"
+        android:label="fragment_pilotos"
+        tools:layout="@layout/fragment_pilotos" />
+    <fragment
         android:id="@+id/inicio"
         android:name="com.example.proyectofinal.inicio"
         android:label="fragment_inicio"
@@ -12,13 +27,14 @@
         <action
             android:id="@+id/action_inicio_to_circuitos2"
             app:destination="@id/circuitos"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popUpTo="@id/inicio" />
+        <action
+            android:id="@+id/action_inicio_to_contacto2"
+            app:destination="@id/contacto"
+            app:popUpTo="@id/inicio" />
+        <action
+            android:id="@+id/action_inicio_to_pilotos"
+            app:destination="@id/pilotos"
             app:popUpTo="@id/inicio" />
     </fragment>
-    <fragment
-        android:id="@+id/circuitos"
-        android:name="com.example.proyectofinal.circuitos"
-        android:label="fragment_circuitos"
-        tools:layout="@layout/fragment_circuitos" />
 </navigation>
