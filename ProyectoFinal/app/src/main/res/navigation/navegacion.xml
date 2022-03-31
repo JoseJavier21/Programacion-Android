@@ -27,6 +27,8 @@
         <action
             android:id="@+id/action_inicio_to_circuitos2"
             app:destination="@id/circuitos"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
             app:popUpTo="@id/inicio" />
         <action
             android:id="@+id/action_inicio_to_contacto2"

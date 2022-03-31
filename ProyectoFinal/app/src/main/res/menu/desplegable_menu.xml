@@ -4,22 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="container">
         <item
-            android:id="@+id/home"
+            android:id="@+id/fragment_inicio"
             android:checked="false"
             android:icon="@drawable/ic_baseline_home_24"
             android:title="Home" />
         <item
-            android:id="@+id/piloto"
+            android:id="@+id/fragment_pilotos"
             android:icon="@drawable/ic_baseline_person_24"
             android:title="Pilotos" />
         <item
-            android:id="@+id/galeria"
+            android:id="@+id/fragment_circuitos"
             android:icon="@drawable/ic_baseline_photo_library_24"
             android:title="Galeria" />
         <item
-            android:id="@+id/contact"
+            android:id="@+id/fragment_contacto"
             android:icon="@drawable/ic_baseline_connect_without_contact_24"
             android:title="Contacto" />
     </group>

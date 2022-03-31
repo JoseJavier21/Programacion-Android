@@ -13,7 +13,6 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,11 +20,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 //   VARIABLES   //
 
-
         val conte = Intent(this, Contenedor::class.java)
-        //minavegacion
         val misPreferencias = getSharedPreferences("myprefs", MODE_PRIVATE)
-        val editor = misPreferencias.edit()
+
 
 
 
@@ -37,7 +34,9 @@ class MainActivity : AppCompatActivity() {
             val contra = binding.contrasenia.text.toString()
             comprobacion(usuario, contra)
 
-            if (comprobacion(usuario, contra) != null){
+            if (comprobacion(usuario,contra) != null){
+                intent.putExtra("usur", "usuario")
+                intent.putExtra("cont", "contra")
                 startActivity(conte)
             }
         }
@@ -58,16 +57,12 @@ class MainActivity : AppCompatActivity() {
                     // EN CASOS POSITIVOS
 
                     usuario == "aficionado" && contra == "123456"->{
-                        Toast.makeText(this, "hola afi", Toast.LENGTH_LONG).show()
-
                     }
 
                     usuario == "jugador" && contra == "qwerasdf"->{
-                        Toast.makeText(this, "hola juga", Toast.LENGTH_LONG).show()
                     }
 
                     usuario == "directivo" && contra == "asdfasdf"->{
-                        Toast.makeText(this, "hola dire", Toast.LENGTH_LONG).show()
                     }
 
                     // EN CASO VACIO
@@ -89,7 +84,6 @@ class MainActivity : AppCompatActivity() {
         private fun cuadrodiag(){
 
             val builder = AlertDialog.Builder(this)
-
             builder.setTitle("Mensaje de error")
             builder.setMessage("Fallo al introducir los datos")
             builder.setNegativeButton("OK", null)

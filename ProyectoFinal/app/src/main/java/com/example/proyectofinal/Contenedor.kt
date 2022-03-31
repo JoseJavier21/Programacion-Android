@@ -22,19 +22,26 @@ class Contenedor: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ContenedorBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         setSupportActionBar(binding.toolbar)
 
+//      VARIABLES    //
+
+        val u = getIntent().extras
 
         val drawerLayout: DrawerLayout = binding.drawerlayout
         val navView: NavigationView = binding.navigationview
         val navController = findNavController(R.id.fragmentContainerView)
+
+//      CODIGO      //
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.fragment_inicio, R.id.fragment_contacto, R.id.fragment_circuitos, R.id.fragment_pilotos
+                R.id.fragment_inicio,
+                R.id.fragment_contacto,
+                R.id.fragment_circuitos,
+                R.id.fragment_pilotos
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
