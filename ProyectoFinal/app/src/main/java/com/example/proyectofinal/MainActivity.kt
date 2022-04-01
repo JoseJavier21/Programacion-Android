@@ -22,61 +22,71 @@ class MainActivity : AppCompatActivity() {
 
         val conte = Intent(this, Contenedor::class.java)
         val misPreferencias = getSharedPreferences("myprefs", MODE_PRIVATE)
-
-
+        val usur = misPreferencias.getString("usur", "")
+        val cont = misPreferencias.getString("cont", "")
 
 
 //   CODIGO    //
-
 
         binding.acceder.setOnClickListener {
             val usuario = binding.usuario.text.toString()
             val contra = binding.contrasenia.text.toString()
             comprobacion(usuario, contra)
+            if (comprobacion(usuario,contra)){  // REVISAR PARA HACER BIEN GUARDAR LOS DATOS
 
-            if (comprobacion(usuario,contra) != null){
-                intent.putExtra("usur", "usuario")
-                intent.putExtra("cont", "contra")
+                val editor = misPreferencias.edit()
+                editor.putString("usur", usur)
+                editor.putString("cont", cont)
+                editor.apply()
+
                 startActivity(conte)
             }
         }
 
         binding.invitados.setOnClickListener {
-
             startActivity(conte)
-
-
-
+            Toast.makeText(this, "Bienvenido invitado", Toast.LENGTH_SHORT).show()
         }
 
     }
 
-    private fun comprobacion(usuario: String, contra: String){
+    private fun comprobacion(usuario: String, contra: String) : Boolean{
 
             when{
                     // EN CASOS POSITIVOS
 
                     usuario == "aficionado" && contra == "123456"->{
+                        Toast.makeText(this, "Bienvenido aficionado", Toast.LENGTH_SHORT).show()
+                        return true
+
                     }
 
                     usuario == "jugador" && contra == "qwerasdf"->{
+                        Toast.makeText(this, "Bienvenido jugador", Toast.LENGTH_SHORT).show()
+                        return true
                     }
 
                     usuario == "directivo" && contra == "asdfasdf"->{
+                        Toast.makeText(this, "Bienvenido directivo", Toast.LENGTH_SHORT).show()
+                        return true
                     }
 
                     // EN CASO VACIO
 
                     usuario.isEmpty()->{
                         binding.usuario.error = "El campo esta vacio"
+
+                        return false
                     }
 
                     contra.isEmpty()->{
                         binding.contrasenia.error = "El campo esta vacio"
+                        return false
                     }
 
                     else->{
                         cuadrodiag()
+                        return false
                     }
             }
     }

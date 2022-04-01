@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navegacion"
-    app:startDestination="@id/inicio">
+    app:startDestination="@id/fragment_inicio">
     <fragment
         android:id="@+id/fragment_circuitos"
         android:name="com.example.proyectofinal.circuitos"
@@ -20,23 +20,8 @@
         android:label="fragment_pilotos"
         tools:layout="@layout/fragment_pilotos" />
     <fragment
-        android:id="@+id/inicio"
+        android:id="@+id/fragment_inicio"
         android:name="com.example.proyectofinal.inicio"
         android:label="fragment_inicio"
-        tools:layout="@layout/fragment_inicio" >
-        <action
-            android:id="@+id/action_inicio_to_circuitos2"
-            app:destination="@id/fragment_circuitos"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popUpTo="@id/inicio" />
-        <action
-            android:id="@+id/action_inicio_to_contacto2"
-            app:destination="@id/fragment_contacto"
-            app:popUpTo="@id/inicio" />
-        <action
-            android:id="@+id/action_inicio_to_pilotos"
-            app:destination="@id/fragment_pilotos"
-            app:popUpTo="@id/inicio" />
-    </fragment>
+        tools:layout="@layout/fragment_inicio" />
 </navigation>

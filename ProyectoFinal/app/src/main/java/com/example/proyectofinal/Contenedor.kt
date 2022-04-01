@@ -1,5 +1,6 @@
 package com.example.proyectofinal
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.view.Menu
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,6 @@ class Contenedor: AppCompatActivity() {
 
 //      VARIABLES    //
 
-        val u = getIntent().extras
 
         val drawerLayout: DrawerLayout = binding.drawerlayout
         val navView: NavigationView = binding.navigationview
@@ -57,8 +57,9 @@ class Contenedor: AppCompatActivity() {
     override fun onBackPressed() {
 
         if(binding.drawerlayout.isDrawerOpen(GravityCompat.START)){
-            binding.drawerlayout.closeDrawer(GravityCompat.START)
+            binding.drawerlayout.closeDrawer(GravityCompat.END)
         }else {
+
             super.onBackPressed()
         }
     }
