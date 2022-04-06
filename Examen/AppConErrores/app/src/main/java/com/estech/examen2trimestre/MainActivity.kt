@@ -1,6 +1,8 @@
 package com.estech.examen2trimestre
 
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-//        supportActionBindind?.setTtile()
+//        supportActionBar?.setTtile()
 //        supportActionBar?.setDisplayHomeAsUpEnabled()
 
         // crear lista de mensajes fijos
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         val listado = mutableListOf(mensaje1, mensaje2, mensaje3)
 
         // configuración del adapter
-        val layoutManager = LinearLayoutManager(this)
+        val layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true)
         adapter = MyAdapter(listado)
         binding.recyclerview.layoutManager = layoutManager
         binding.recyclerview.adapter = adapter
@@ -45,8 +47,6 @@ class MainActivity : AppCompatActivity() {
         // call back para el listener de arrastrar celda
         val arrastraParaEliminar = ItemTouchHelper(simpleCallback)
         arrastraParaEliminar.attachToRecyclerView(binding.recyclerview)
-
-
     }
 
     /**
@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
      * si el campo no está vacío, obtiene la fecha actual, crea un objeto mensaje y llama a la
      * función aniadirTarea del adaptador
      */
+
     private fun enviarMensaje() {
         val tarea = binding.campotexto.text.toString()
 
@@ -88,5 +89,19 @@ class MainActivity : AppCompatActivity() {
         override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
             adapter.eliminarTarea(viewHolder.adapterPosition)
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == R.id.acercade) {
+//        val intent = Intent(this, AcercaDe::class.java)
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 }

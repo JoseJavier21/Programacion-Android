@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
         // click boton entrar
         binding.loginBtnLogin.setOnClickListener {
             val usertext = binding.loginEdUser.text.toString()
-            val passtext = binding.loginEdPass.toString()
+            val passtext = binding.loginEdPass.text.toString() // poner .text para que cogiera el texto
             compruebaLogin(usertext, passtext)
         }
 

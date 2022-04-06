@@ -16,6 +16,7 @@ class AcercaDe : AppCompatActivity() {
         binding = ActivityAcercaDeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
         Glide
             .with(this)
             .load(R.drawable.gato_moviendo_cabeza)
