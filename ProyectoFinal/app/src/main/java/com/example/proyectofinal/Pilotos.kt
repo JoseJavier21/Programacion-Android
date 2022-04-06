@@ -19,26 +19,17 @@ class Pilotos : Fragment() {
     ): View? {
         binding = FragmentPilotosBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-        val piloto1 = ListaPilotos("Fernando alonso", 12, "España")
-        val pilot = mutableListOf(piloto1)
-//
-//        val recyclerView = binding.recyclerView
-//        val llm = LinearLayoutManager(this)
-//        recyclerView.layoutManager = llm
-//        adapter = ListaPilotos(pilot)
-//        recyclerView.adapter = adapter
-
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val algo = listOf(R.drawable.cicuito1,
+            R.drawable.cicuito2,
+            R.drawable.circuit3,
+            R.drawable.circuit4)
+        val adapter = AdapterGalery(algo)
+        binding.recyclerView.adapter = adapter
 
     }
 }
