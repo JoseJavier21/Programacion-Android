@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion"
+    app:startDestination="@id/listPersonajes">
+
+    <fragment
+        android:id="@+id/listPersonajes"
+        android:name="com.example.practica_valorant.ListPersonajes"
+        android:label="fragment_list_personajes"
+        tools:layout="@layout/fragment_list_personajes" >
+        <action
+            android:id="@+id/action_listPersonajes_to_infoPersonaj"
+            app:destination="@id/infoPersonaj" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoPersonaj"
+        android:name="com.example.practica_valorant.InfoPersonaj"
+        android:label="fragment_info_personaj"
+        tools:layout="@layout/fragment_info_personaj" />
+</navigation>
