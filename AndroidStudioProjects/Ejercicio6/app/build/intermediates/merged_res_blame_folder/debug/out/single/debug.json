@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\layout_cerdo.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\layout\\cerdo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_fondorojo.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\fondorojo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\layout_login.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\layout\\login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_request_quote_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_request_quote_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_difuminado.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\difuminado.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_fondopantalla8.jpg.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\fondopantalla8.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_remove_red_eye_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_remove_red_eye_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_analytics_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_analytics_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_circulo.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\circulo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_cuadrado.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\cuadrado.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_message_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_message_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_signodedolar.png.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\signodedolar.png"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_qr_code_scanner_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_qr_code_scanner_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_attach_money_24.xml.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\ic_baseline_attach_money_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\build\\intermediates\\merged_res\\debug\\drawable_logoredondo.png.flat",
+        "source": "C:\\Users\\Jose\\AndroidStudioProjects\\Ejercicio6\\app\\src\\main\\res\\drawable\\logoredondo.png"
+    }
+]
