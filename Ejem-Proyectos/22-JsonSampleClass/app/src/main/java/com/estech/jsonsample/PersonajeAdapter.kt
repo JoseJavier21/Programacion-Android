@@ -15,8 +15,7 @@ import com.estech.jsonsample.modelos.Personaje
  * Copyright (c) 2022 Qastusoft. All rights reserved.
  */
 
-class PersonajeAdapter(val personajes : List<Personaje>)
-	: RecyclerView.Adapter<PersonajeAdapter.MiCelda>()
+class PersonajeAdapter(val personajes : List<Personaje>): RecyclerView.Adapter<PersonajeAdapter.MiCelda>()
 {
 
 	inner class MiCelda(val binding : VistaCeldaBinding) : RecyclerView.ViewHolder(binding.root)

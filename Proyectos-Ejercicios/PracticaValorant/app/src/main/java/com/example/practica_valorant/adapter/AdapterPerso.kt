@@ -2,10 +2,14 @@ package com.example.practica_valorant
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.practica_valorant.databinding.CeldaListBinding
+import com.example.practica_valorant.modelos.Personaje
 
-class AdapterPerso(val personajes : List<Personaje>) : RecyclerView.Adapter<AdapterPerso.Celda>()
+class AdapterPerso(val personajes: List<Personaje>) : RecyclerView.Adapter<AdapterPerso.Celda>()
 {
 
     inner class Celda(val binding : CeldaListBinding) : RecyclerView.ViewHolder(binding.root)
@@ -18,10 +22,21 @@ class AdapterPerso(val personajes : List<Personaje>) : RecyclerView.Adapter<Adap
     }
 
     override fun onBindViewHolder(holder: Celda, position: Int) {
-        TODO("Not yet implemented")
+
+        val personaje : Personaje = personajes.get(position)
+        holder.binding.nombreper.text = personaje.nombrePersonaje
+
+        Glide.with(holder.itemView).load(personaje.image).into(holder.binding.renderperso)
+
+        holder.itemView.setOnClickListener {
+            val bundle = bundleOf("personaje" to personaje)
+            val navigation = holder.itemView.findNavController()
+            navigation.navigate(R.id.action_listPersonajes_to_infoPersonaj, bundle)
+        }
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+
+        return personajes.size
     }
 }
