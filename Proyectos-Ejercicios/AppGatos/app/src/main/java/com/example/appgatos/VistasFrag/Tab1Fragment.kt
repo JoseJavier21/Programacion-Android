@@ -25,7 +25,7 @@ class Tab1Fragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val recycleView = binding.recyclerView1
-
         recycleView.layoutManager = LinearLayoutManager(recycleView.context)
+
     }
 }
