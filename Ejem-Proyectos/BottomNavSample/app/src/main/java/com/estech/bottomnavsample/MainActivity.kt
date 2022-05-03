@@ -9,6 +9,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.estech.bottomnavsample.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.estech.bottomnavsample.R.id.nav_settings as nav_settings1
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragmentContainerView)
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_notif, R.id.nav_settings
+                R.id.nav_home, R.id.nav_notif, nav_settings1
             )
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
@@ -33,13 +34,9 @@ class MainActivity : AppCompatActivity() {
         navView.setOnItemSelectedListener {
             val id = it.itemId
             when (id) {
-                R.id.nav_settings -> Toast.makeText(this, "AJUSTES", Toast.LENGTH_SHORT).show()
+                nav_settings1 -> Toast.makeText(this, "AJUSTES", Toast.LENGTH_SHORT).show()
             }
             true
-        }
-
-        navView.setOnItemReselectedListener {
-
         }
 
     }
