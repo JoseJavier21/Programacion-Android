@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\javier.rojo\\Documents\\GitHub\\Programacion-Android\\Ejem-Proyectos\\PokemonApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\javier.rojo\\Documents\\GitHub\\Programacion-Android\\Ejem-Proyectos\\PokemonApi\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\javier.rojo\\Documents\\GitHub\\Programacion-Android\\Ejem-Proyectos\\PokemonApi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_list.xml",
+        "source": "C:\\Users\\javier.rojo\\Documents\\GitHub\\Programacion-Android\\Ejem-Proyectos\\PokemonApi\\app\\src\\main\\res\\layout\\item_list.xml"
+    }
+]
