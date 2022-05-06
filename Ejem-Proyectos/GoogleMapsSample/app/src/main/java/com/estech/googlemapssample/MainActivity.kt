@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val fragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
@@ -56,64 +58,63 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         uiSettings.isRotateGesturesEnabled = true //Gestos de rotación
 
 
-        // asignar max y min zoom al mapa (3 a 22)
+//         asignar max y min zoom al mapa (3 a 22)
 //        map.setMinZoomPreference(10.0f)
 //        map.setMaxZoomPreference(14.0f)
 
         //Mover cámara
-//        val latLng = LatLng(38.38, -3.78)  //LatLng es latitud y longitud en double
-////        val cu = CameraUpdateFactory.newLatLng(latLng)
-//        val cuZoom = CameraUpdateFactory.newLatLngZoom(
-//            latLng,
-//            4f
-//        ) //float determina el nivel de zoom, siendo 1 el más lejano
+        val latLng = LatLng(38.38, -3.78)  //LatLng es latitud y longitud en double
+//        val cu = CameraUpdateFactory.newLatLng(latLng)
+        val cuZoom = CameraUpdateFactory.newLatLngZoom(latLng,4f)
+
+        //float determina el nivel de zoom, siendo 1 el más lejano
 
         // mueve la cámara a una ubicación
 
-//        map.moveCamera(cuZoom)
+        map.moveCamera(cuZoom)
 
-//        binding.fabrefresh.setOnClickListener {
-//            val madrid = CameraUpdateFactory.newLatLngZoom(
-//                LatLng(40.42062134847416, -3.7042661462520288),
-//                7f
-//            )
-//            map.animateCamera(madrid)
-//        }
+        binding.fabRefresh.setOnClickListener {
+            val madrid = CameraUpdateFactory.newLatLngZoom(
+                LatLng(40.42062134847416, -3.7042661462520288),
+                7f
+            )
+            map.animateCamera(madrid)
+        }
 
-//        binding.fabZoom.setOnClickListener {
-//            val maxZoom = CameraUpdateFactory.zoomTo(20f)
-//            map.animateCamera(maxZoom)
-//        }
+        binding.fabZoom.setOnClickListener {
+            val maxZoom = CameraUpdateFactory.zoomTo(20f)
+            map.animateCamera(maxZoom)
+        }
 
         // centrar mapa en un área
-//        val madrid = LatLng(40.47883646461693, -3.7692950517063832)
-//        val paris = LatLng(48.92116447022164, 2.4269937759977664)
-//        val roma = LatLng(41.835314517079205, 12.446524646327886)
-//        val region = LatLngBounds.Builder()
-//            .include(madrid)
-//            .include(paris)
-//            .include(roma)
-//            .build()
+        val madrid = LatLng(40.47883646461693, -3.7692950517063832)
+        val paris = LatLng(48.92116447022164, 2.4269937759977664)
+        val roma = LatLng(41.835314517079205, 12.446524646327886)
+        val region = LatLngBounds.Builder()
+            .include(madrid)
+            .include(paris)
+            .include(roma)
+            .build()
 
 // map.moveCamera(CameraUpdateFactory.newLatLngZoom(australia.center, 3f))
 //
 //      listener para esperar que el mapa esté cargado
-//        map.setOnMapLoadedCallback {
-//            map.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 20))
-//        }
+        map.setOnMapLoadedCallback {
+            map.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 20))
+        }
 
         // listener al pulsar un punto de interés
 
         // listener al pulsar un punto de interés
-//        map.setOnPoiClickListener { pointOfInterest ->
-//            Toast.makeText(
-//                 this@MainActivity,
-//                "Nombre del sitio: " + pointOfInterest.name,
-//                Toast.LENGTH_SHORT
-//            ).show()
-//            val ubicacion = pointOfInterest.latLng
-//            map.animateCamera(CameraUpdateFactory.newLatLng(ubicacion))
-//        }
+        map.setOnPoiClickListener { pointOfInterest ->
+            Toast.makeText(
+                 this@MainActivity,
+                "Nombre del sitio: " + pointOfInterest.name,
+                Toast.LENGTH_SHORT
+            ).show()
+            val ubicacion = pointOfInterest.latLng
+            map.animateCamera(CameraUpdateFactory.newLatLng(ubicacion))
+        }
 
 //        map.setOnMapClickListener {
 //           val option1 = MarkerOptions()
@@ -126,100 +127,100 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //        }
 
         // añadir marker
-//        val options1 = MarkerOptions()
-//            .position(LatLng(38.5, -3.3))
-//            .title("Sitio")
-//            .snippet("Pulsa aquí para acceder")
-//            .alpha(.6f)
-//            .rotation(90f)
-//        val marker1 = map.addMarker(options1)
+        val options1 = MarkerOptions()
+            .position(LatLng(38.5, -3.3))
+            .title("Sitio")
+            .snippet("Pulsa aquí para acceder")
+            .alpha(.6f)
+            .rotation(90f)
+        val marker1 = map.addMarker(options1)
 //
-//        val options2 = MarkerOptions()
-//            .position(LatLng(38.09418604624217, -3.6312538))
-//            .title("Sitio2")
-//            .snippet("Pulsa aquí para acceder")
-//            .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker))
-//        val marker2 = map.addMarker(options2)
+        val options2 = MarkerOptions()
+            .position(LatLng(38.09418604624217, -3.6312538))
+            .title("Sitio2")
+            .snippet("Pulsa aquí para acceder")
+            .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker))
+        val marker2 = map.addMarker(options2)
 //
-//        val options3 = MarkerOptions()
-//            .position(LatLng(39.5, -2.3))
-//            .title("Sitio3")
-//            .snippet("Pulsa aquí para acceder")
-//            .flat(true)
-//        val marker3 = map.addMarker(options3)
+        val options3 = MarkerOptions()
+            .position(LatLng(39.5, -2.3))
+            .title("Sitio3")
+            .snippet("Pulsa aquí para acceder")
+            .flat(true)
+        val marker3 = map.addMarker(options3)
 //
-//        val options4 = MarkerOptions()
-//            .position(LatLng(37.5, -4.3))
-//            .title("Sitio4")
-//            .snippet("Pulsa aquí para acceder")
-//            .flat(true)
-//            .draggable(true)
-//            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
-//        val marker4 = map.addMarker(options4)
-//        marker4?.tag = "mimarker"
+        val options4 = MarkerOptions()
+            .position(LatLng(37.5, -4.3))
+            .title("Sitio4")
+            .snippet("Pulsa aquí para acceder")
+            .flat(true)
+            .draggable(true)
+            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
+        val marker4 = map.addMarker(options4)
+        marker4?.tag = "mimarker"
 
 
         // listener draggable para arrastrar y solar marker
-//        map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {
-//            override fun onMarkerDrag(p0: Marker) {
-//            }
+        map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {
+            override fun onMarkerDrag(p0: Marker) {
+            }
 //
-//            override fun onMarkerDragEnd(marker: Marker) {
-//                if (marker.tag == "mimarker") {
-//                    val latLng1 = marker.position
-//                    val latitud = latLng1.latitude
-//                    val longitud = latLng1.longitude
-//                    Toast.makeText(
-//                        this@MainActivity,
-//                        "Latitud: $latitud, Longitud: $longitud",
-//                        Toast.LENGTH_SHORT
-//                    ).show()
-//                }
-//            }
-//
-//            override fun onMarkerDragStart(p0: Marker) {
-//            }
-//        })
+            override fun onMarkerDragEnd(marker: Marker) {
+                if (marker.tag == "mimarker") {
+                    val latLng1 = marker.position
+                    val latitud = latLng1.latitude
+                    val longitud = latLng1.longitude
+                    Toast.makeText(
+                        this@MainActivity,
+                        "Latitud: $latitud, Longitud: $longitud",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
 
-        //click en el marker
-//        map.setOnMarkerClickListener { marker ->
-//            if (marker == marker2) {
-//                Toast.makeText(this@MainActivity, "Escuela Estech", Toast.LENGTH_SHORT).show()
-//            }
-//            false
-//        }
+            override fun onMarkerDragStart(p0: Marker) {
+            }
+        })
+
+//        click en el marker
+        map.setOnMarkerClickListener { marker ->
+            if (marker == marker2) {
+                Toast.makeText(this@MainActivity, "Escuela Estech", Toast.LENGTH_SHORT).show()
+            }
+            false
+        }
 
         //click en cartel del marker
-//        map.setOnInfoWindowClickListener { marker ->
-//            if (marker == marker2) {
-//                val i = Intent(Intent.ACTION_VIEW)
-//                i.data = Uri.parse("https://escuelaestech.es")
-//                startActivity(i)
-//            }
-//        }
+        map.setOnInfoWindowClickListener { marker ->
+            if (marker == marker2) {
+                val i = Intent(Intent.ACTION_VIEW)
+                i.data = Uri.parse("https://escuelaestech.es")
+                startActivity(i)
+            }
+        }
 
         // eliminar marker
 
         // si se pincha sobre el mismo marcador se elimina
 
-        map.setOnMarkerClickListener {
-           it.remove()
-            true
-        }
+//        map.setOnMarkerClickListener {
+//           it.remove()
+//            true
+//        }
 
 
         //Custom Window
-//        map.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
-//            override fun getInfoContents(p0: Marker): View {
-//                val binding = CustomWindowInfoBinding.inflate(layoutInflater)
-//                return binding.root
-//            }
-//
-//            override fun getInfoWindow(p0: Marker): View? {
-//                return null
-//            }
-//
-//        })
+        map.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
+            override fun getInfoContents(p0: Marker): View {
+                val binding = CustomWindowInfoBinding.inflate(layoutInflater)
+                return binding.root
+            }
+
+            override fun getInfoWindow(p0: Marker): View? {
+                return null
+            }
+
+        })
 
         //Polyline
 //        var rectOptions = PolylineOptions()
