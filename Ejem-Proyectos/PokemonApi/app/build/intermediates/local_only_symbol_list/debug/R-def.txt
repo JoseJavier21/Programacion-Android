@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_baseline_search_24
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable shape
+id app_bar_search
+id divider
+id ivImage
+id llItem
+id recyclerview
+id searchview
+id swipe
+id tvName
+id tvType
+layout activity_main
+layout item_list
+menu menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.PokemonApi
