@@ -5,17 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.appgatosfinal.databinding.FragmentInfoCatBinding
+import com.example.appgatosfinal.databinding.FragmentInfocatBinding
 
 class infocatFragment : Fragment() {
 
-    private lateinit var binding: FragmentInfoCatBinding
+    private lateinit var binding: FragmentInfocatBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentInfoCatBinding.inflate(inflater, container, false)
+        binding = FragmentInfocatBinding.inflate(inflater, container, false)
         return (binding.root)
     }
 

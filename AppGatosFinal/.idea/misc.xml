@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/layout/activity_main.xml" value="0.3729166666666667" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/layout/fragment_info_cat.xml" value="0.38697916666666665" />
         <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/layout/fragment_infocat.xml" value="0.3813405797101449" />
+        <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/layout/fragment_listagatos.xml" value="0.4715690466011116" />
         <entry key="..\:/onedrive/Documentos/GitHub/Programacion-Android/AppGatosFinal/app/src/main/res/menu/menu.xml" value="0.38697916666666665" />
       </map>
     </option>

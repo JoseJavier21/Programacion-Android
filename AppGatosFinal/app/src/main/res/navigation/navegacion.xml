@@ -5,14 +5,18 @@
     android:id="@+id/navegacion"
     app:startDestination="@id/mainActivity">
 
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.appgatosfinal.MainActivity"
-        android:label="activity_main"
-        tools:layout="@layout/activity_main" />
     <fragment
         android:id="@+id/infocatFragment"
         android:name="com.example.appgatosfinal.infocatFragment"
         android:label="fragment_infocat"
         tools:layout="@layout/fragment_infocat" />
+    <fragment
+        android:id="@+id/listagatosFragment"
+        android:name="com.example.appgatosfinal.listagatosFragment"
+        android:label="fragment_listagatos"
+        tools:layout="@layout/fragment_listagatos" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.appgatosfinal.MainActivity"
+        android:label="MainActivity" />
 </navigation>
