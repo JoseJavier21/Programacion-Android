@@ -15,4 +15,8 @@
         android:name="com.example.aplicacionmapa.infoSitios"
         android:label="fragment_info_sitios"
         tools:layout="@layout/fragment_info_sitios" />
+    <action
+        android:id="@+id/action_global_infoSitios"
+        app:destination="@id/infoSitios"
+        app:enterAnim="@anim/nav_default_enter_anim" />
 </navigation>

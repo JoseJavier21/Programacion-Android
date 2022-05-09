@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 
 interface RetrofitServices {
 
-    @GET("sitios")
-    suspend fun getlugares(): Response<MapasItem>
+//    @GET("direccion")
+//    suspend fun getlugares(): Response<MapasItem>
 
 }

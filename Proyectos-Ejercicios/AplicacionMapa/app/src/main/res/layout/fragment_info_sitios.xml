@@ -8,10 +8,11 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#FBF1F1">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/fotomonu"
             android:layout_width="match_parent"
             android:layout_height="220dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -28,18 +29,8 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintBottom_toBottomOf="@+id/fotomonu"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <androidx.constraintlayout.widget.Barrier
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:paddingTop="5dp"
-            app:barrierDirection="bottom"
-            app:layout_constraintBottom_toBottomOf="@id/imageView2"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="411dp" />
 
         <TextView
             android:id="@+id/direccion"
@@ -49,7 +40,7 @@
             android:layout_marginTop="16dp"
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/fotomonu" />
 
         <TextView
             android:id="@+id/telefono"
@@ -70,6 +61,87 @@
             android:text="TextView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botonrandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_anchor="@id/fotomonu"
+            app:layout_anchorGravity="bottom|right|end"
+            android:clickable="true"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.45" />
+
+        <ImageButton
+            android:id="@+id/locationbuttom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_place_24"
+            android:tint="#4CAF50"
+            app:layout_constraintEnd_toStartOf="@+id/gallerybuttom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/webbuttom"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <ImageButton
+            android:id="@+id/gallerybuttom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_photo_library_24"
+            android:tint="#DDCE4B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/locationbuttom"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <ImageButton
+            android:id="@+id/webbuttom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_public_24"
+            android:tint="#3F51B5"
+            app:layout_constraintEnd_toStartOf="@+id/locationbuttom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/telefonobuttom"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <ImageButton
+            android:id="@+id/telefonobuttom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/ic_baseline_call_24"
+            android:tint="#CC6141"
+            app:layout_constraintEnd_toStartOf="@+id/webbuttom"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="309dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefonobuttom" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
