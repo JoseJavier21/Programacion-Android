@@ -10,130 +10,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="049f7895-bcd3-4a3b-8602-9534c572cfa5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../PokemonApi/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/androidTest/java/com/estech/pokemonapi/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/DataAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/models/Resultado.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/retrofit/Repositorio.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/retrofit/RetrofitHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/java/com/estech/pokemonapi/retrofit/RetrofitService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/drawable/shape.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/layout/item_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/app/src/test/java/com/estech/pokemonapi/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PokemonApi/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/estech/pokemonapi/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/DataAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/models/Resultado.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/retrofit/Repositorio.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/retrofit/RetrofitHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/estech/pokemonapi/retrofit/RetrofitService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/shape.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/estech/pokemonapi/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/Adapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/drawable/ic_baseline_share_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/drawable/votonegativo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/drawable/votopositivo.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CoordinatorLayoutSample/app/src/main/res/layout/tablayout_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoordinatorLayoutSample/app/src/main/res/layout/tablayout_activity.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/DataClass/Gato.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/DataClass/Gato.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/Retrofit/Repositorio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/Retrofit/Repositorio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/Retrofit/RetrofitHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/Retrofit/RetrofitHelper.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/VistasFrag/Tab1Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/VistasFrag/Tab1Fragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/VistasFrag/Tab2Fragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/VistasFrag/Tab2Fragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/infoCat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/java/com/example/appgatos/infoCat.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/fragment_info_cat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/fragment_info_cat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/infocat.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/layout/infocat.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/menu/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/menu/menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/navigation/navegacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AppGatos/app/src/main/res/navigation/navegacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PokemonApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PokemonApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetrofitSampleCompleto/.idea/RetrofitSampleCompleto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitSampleCompleto/.idea/RetrofitSampleCompleto.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetrofitSampleCompleto/RetrofitSample/app/src/main/java/com/estech/retrofitsample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitSampleCompleto/RetrofitSample/app/src/main/java/com/estech/retrofitsample/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/Repositorio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/Repositorio.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/RetrofitObjects.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/RetrofitObjects.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/RetrofitServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Proyectos-Ejercicios/AplicacionMapa/app/src/main/java/com/example/aplicacionmapa/retrofit/RetrofitServices.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\javier.rojo\.android\avd\Pixel_4_API_32.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\Jose\.android\avd\Pixel_3a_API_32.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -258,5 +152,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

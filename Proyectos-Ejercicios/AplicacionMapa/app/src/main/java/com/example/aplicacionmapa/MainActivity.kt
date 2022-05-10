@@ -14,6 +14,8 @@ import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
@@ -27,14 +29,15 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         val fragmet = supportFragmentManager.findFragmentById(R.id.mapa) as SupportMapFragment
         fragmet.getMapAsync(this)
 
+        binding.button.setOnClickListener {
+            findNavController(R.id.mainActivity).navigate(R.id.infoSitios)
+        }
     }
-
 
     override fun onMapReady(mapa: GoogleMap) {
         mapa.setMapType(GoogleMap.MAP_TYPE_HYBRID)
         mapa.isTrafficEnabled = true
         val uiSettings = mapa.getUiSettings()
-
 
         // Centrado de mapa
         val madrid = LatLng(40.47883646461693, -3.7692950517063832)
@@ -46,10 +49,15 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             .include(portugal)
             .build()
 
+        suspend fun get(url: String) =
+        withContext(Dispatchers.IO) {
+
+        }
+
 
         // Mientas carga el mapa
         mapa.setOnMapLoadedCallback {
-            mapa.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 20))
+            mapa.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 10))
             Toast.makeText(this,"Cargando Mapa", Toast.LENGTH_SHORT).show()
         }
 
@@ -73,33 +81,16 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         uiSettings.isRotateGesturesEnabled = true
 
 
-
-        // Para cambiar la posicion y zomm de la camara
-         val latLng = LatLng(32.00, 323.00) // cambias numeros
-            CameraUpdateFactory.newLatLngZoom(latLng, 8f)
-
-
-
-
         // Cuando se pulsa en la localizacion
         mapa.setOnMarkerClickListener { marker ->
-//            if (marker == null) {
-//                Toast.makeText(this@MainActivity, "Escuela Estech", Toast.LENGTH_SHORT).show()
-//            }
 
              false
         }
 
 
         // Cuando se pulsa en el cartel de la localizacion
-
         mapa.setOnInfoWindowClickListener { marker ->
-//            if (marker == null) {
-//                val i = Intent(Intent.ACTION_VIEW)
-//                i.data = Uri.parse("https://escuelaestech.es")
-//                startActivity(i)
-//            }
-            findNavController(R.id.mapa).navigate(R.id.infoSitios)
+//            findNavController(R.id.mainActivity).navigate(R.id.infoSitios)
         }
 
 
