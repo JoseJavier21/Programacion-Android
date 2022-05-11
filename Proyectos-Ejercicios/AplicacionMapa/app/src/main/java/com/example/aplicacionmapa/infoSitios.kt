@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.bumptech.glide.Glide
 import com.example.aplicacionmapa.databinding.FragmentInfoSitiosBinding
 import com.example.aplicacionmapa.datamaps.MapasItem
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class infoSitios : Fragment() {
@@ -22,8 +24,6 @@ class infoSitios : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentInfoSitiosBinding.inflate(layoutInflater, container, false)
         return binding.root
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,9 +35,10 @@ class infoSitios : Fragment() {
         if (lugares != null){
             (requireActivity() as MainActivity).supportActionBar?.title = lugares.name
             binding.nombre.text = lugares.name
-        Glide.with(this).load(lugares.image).into(binding.fotomonu)
+//        Glide.with(this).load(lugares.image).into(binding.fotomonu)
         }
 
-    }
 
+
+    }
 }

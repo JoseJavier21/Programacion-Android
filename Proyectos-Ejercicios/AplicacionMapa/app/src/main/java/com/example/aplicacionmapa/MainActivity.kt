@@ -8,18 +8,22 @@ import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.aplicacionmapa.databinding.ActivityMainBinding
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var appBarConfiguration: AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,9 +33,9 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         val fragmet = supportFragmentManager.findFragmentById(R.id.mapa) as SupportMapFragment
         fragmet.getMapAsync(this)
 
-        binding.button.setOnClickListener {
-            findNavController(R.id.mainActivity).navigate(R.id.infoSitios)
-        }
+//        val navController = findNavController(R.id.mapa)
+//        appBarConfiguration = AppBarConfiguration(navController.graph)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onMapReady(mapa: GoogleMap) {
@@ -49,16 +53,15 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
             .include(portugal)
             .build()
 
-        suspend fun get(url: String) =
-        withContext(Dispatchers.IO) {
-
-        }
-
 
         // Mientas carga el mapa
         mapa.setOnMapLoadedCallback {
             mapa.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 10))
             Toast.makeText(this,"Cargando Mapa", Toast.LENGTH_SHORT).show()
+        }
+
+        CoroutineScope(Dispatchers.IO).launch {
+
         }
 
 
@@ -87,13 +90,16 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
              false
         }
 
-
         // Cuando se pulsa en el cartel de la localizacion
         mapa.setOnInfoWindowClickListener { marker ->
 //            findNavController(R.id.mainActivity).navigate(R.id.infoSitios)
         }
 
+    }
 
-
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.mapa)
+        return navController.navigateUp(appBarConfiguration)
+                || super.onSupportNavigateUp()
     }
 }
