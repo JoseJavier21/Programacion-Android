@@ -1,5 +1,6 @@
 package com.estech.appcontactos.domain.room
 
+import android.provider.ContactsContract
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.estech.appcontactos.domain.models.TablaContact
@@ -21,10 +22,10 @@ interface ContactosDao {
 
     //Borrado de datos
     @Delete
-    suspend fun deleteContact()
+    suspend fun deleteContact(contact: TablaContact)
 
-    @Query("delete from mis_contactos where id = :id")
-    suspend fun deleteoneContact(id: Int)
+//    @Query("delete from mis_contactos where id = :id")
+//    suspend fun deleteoneContact(id: Int)
 
 
     //Buscador de Contactos

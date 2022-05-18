@@ -3,6 +3,7 @@ package com.estech.appcontactos.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.estech.appcontactos.domain.models.TablaContact
 import com.estech.appcontactos.domain.room.Repositorio
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -16,10 +17,17 @@ import kotlinx.coroutines.launch
 
 class MyViewModel(val repository: Repositorio) : ViewModel() {
 
-    init {
-        val todosContactos = repository.todosContact
-    }
+        val todosContactos: LiveData<List<TablaContact>>
 
+        init {
+            todosContactos = repository.todosContact
+        }
+
+    fun insertContact(contact: TablaContact){
+        CoroutineScope(Dispatchers.IO).launch {
+            repository.insertContact(contact)
+        }
+    }
 
     class MyViewModelFactory(val repository: Repositorio) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {

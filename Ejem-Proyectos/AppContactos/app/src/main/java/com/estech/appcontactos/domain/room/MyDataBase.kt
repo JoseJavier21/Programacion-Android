@@ -17,7 +17,7 @@ abstract class MyDataBase : RoomDatabase() {
     abstract fun contactosDao(): ContactosDao
 
     companion object {
-        const val DBNAME = "contactos_database"
+        const val DBNAME = "TablaContact_database"
 
         @Volatile
         private var INSTANCE: MyDataBase? = null

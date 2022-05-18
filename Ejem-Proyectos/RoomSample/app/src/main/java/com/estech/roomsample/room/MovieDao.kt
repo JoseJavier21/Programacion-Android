@@ -23,4 +23,7 @@ interface MovieDao {
     @Update
     suspend fun update(vararg movies: MovieEntity)
 
+    @Query("select count(*) from movie_items")
+    fun totalpeliculas(): LiveData<Int>
+
 }

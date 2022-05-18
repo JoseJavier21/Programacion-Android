@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+//        val myApplication = application as myApplication
+
         configRecycler()
 
         binding.buttonAdd.setOnClickListener { addMovie() }

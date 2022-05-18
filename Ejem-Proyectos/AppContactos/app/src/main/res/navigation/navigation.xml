@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
     app:startDestination="@id/listaContactosFragment">
 
@@ -8,4 +9,9 @@
         android:id="@+id/listaContactosFragment"
         android:name="com.estech.appcontactos.ui.ListaContactosFragment"
         android:label="ListaContactosFragment" />
+    <fragment
+        android:id="@+id/anadircontacto"
+        android:name="com.estech.appcontactos.ui.anadircontacto"
+        android:label="fragment_anadircontacto"
+        tools:layout="@layout/fragment_anadircontacto" />
 </navigation>
