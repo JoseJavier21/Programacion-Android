@@ -29,6 +29,20 @@ class MyViewModel(val repository: Repositorio) : ViewModel() {
         }
     }
 
+    fun deleteContact(contact: TablaContact){
+        CoroutineScope(Dispatchers.IO).launch {
+            repository.deleteCotact(contact)
+        }
+    }
+
+    fun searchContact(contact: TablaContact){
+
+    }
+
+
+
+
+
     class MyViewModelFactory(val repository: Repositorio) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return modelClass.getConstructor(Repositorio::class.java)

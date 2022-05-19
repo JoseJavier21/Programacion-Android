@@ -10,6 +10,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.estech.appcontactos.MyApp
 import com.estech.appcontactos.R
 import com.estech.appcontactos.databinding.ActivityMainBinding
+import com.estech.appcontactos.domain.models.TablaContact
 import com.estech.appcontactos.viewmodel.MyViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -32,6 +33,27 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragmentContainerView)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
+
+
+        binding.aniadir.setOnClickListener {
+//            findNavController(R.id.fragmentContainerView).navigate(R.id.action_listaContactosFragment_to_aniadirContactoFragment)
+           val contact  = TablaContact(
+                "jose",
+                "rojo",
+                3,
+                "josee",
+                23,
+                false
+            )
+
+            view.insertContact(contact)
+        }
+
+        binding.eliminar.setOnClickListener {
+
+        }
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

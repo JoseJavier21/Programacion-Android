@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.estech.appcontactos.MyApp
-import com.estech.appcontactos.databinding.FragmentAnadircontactoBinding
 import com.estech.appcontactos.databinding.FragmentListaContactosBinding
 import com.estech.appcontactos.domain.models.TablaContact
 import com.estech.appcontactos.viewmodel.MyViewModel
@@ -49,22 +48,19 @@ class ListaContactosFragment: Fragment() {
             adapter.updateUserList(it as ArrayList<TablaContact>)
         }
 
-        binding.aniadir.setOnClickListener {
-            val contact  = TablaContact(
-                "jose",
-                "rojo",
-                3,
-                "josee",
-                23,
-                false
-            )
+//        binding.anidir.setOnClickListener {
+//            val contact  = TablaContact(
+//                "jose",
+//                "rojo",
+//                3,
+//                "josee",
+//                23,
+//                false
+//            )
+//
+//            view.insertContact(contact)
+//        }
 
-            view.insertContact(contact)
-        }
-
-        binding.delete.setOnClickListener {
-
-        }
 
     }
 }
