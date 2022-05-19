@@ -161,26 +161,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         // listener draggable para arrastrar y solar marker
-        map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {
-            override fun onMarkerDrag(p0: Marker) {
-            }
-//
-            override fun onMarkerDragEnd(marker: Marker) {
-                if (marker.tag == "mimarker") {
-                    val latLng1 = marker.position
-                    val latitud = latLng1.latitude
-                    val longitud = latLng1.longitude
-                    Toast.makeText(
-                        this@MainActivity,
-                        "Latitud: $latitud, Longitud: $longitud",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-
-            override fun onMarkerDragStart(p0: Marker) {
-            }
-        })
+//        map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {})
 
 //        click en el marker
         map.setOnMarkerClickListener { marker ->
