@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.estech.appcontactos.MyApp
 import com.estech.appcontactos.databinding.FragmentListaContactosBinding
 import com.estech.appcontactos.domain.models.TablaContact
@@ -48,6 +51,7 @@ class ListaContactosFragment: Fragment() {
             adapter.updateUserList(it as ArrayList<TablaContact>)
         }
 
+
 //        binding.anidir.setOnClickListener {
 //            val contact  = TablaContact(
 //                "jose",
@@ -60,7 +64,15 @@ class ListaContactosFragment: Fragment() {
 //
 //            view.insertContact(contact)
 //        }
+    }
 
+    override fun configRecycler(viewModel: ViewModel){
+        val layoutManager = LinearLayoutManager(
+            requireContext(),
+            LinearLayoutManager.VERTICAL, false)
 
+        adapter = Adapter(viewModel)
+        binding.recycler.layoutManager = layoutManager
+        binding.recycler.adapter = adapter
     }
 }

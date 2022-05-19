@@ -10,60 +10,63 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/nombre"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:background="#B0F5FD"
-            android:hint="nombre"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:cardBackgroundColor="@color/purple_500"
+            app:cardCornerRadius="20dp">
 
-        <TextView
-            android:id="@+id/apellidos"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:background="#F6BCAA"
-            android:hint="apellidos"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nombre" />
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#B0F5FD"
+                android:hint="nombre"
+                android:translationX="5dp"
+                android:translationY="0dp" />
 
-        <TextView
-            android:id="@+id/tlf"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:background="#FFF7AE"
-            android:hint="telefono"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/apellidos" />
+            <TextView
+                android:id="@+id/apellidos"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#F6BCAA"
+                android:hint="apellidos"
+                android:translationX="180dp"
+                android:translationY="0dp" />
 
-        <TextView
-            android:id="@+id/correo"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:background="#C1F8C4"
-            android:hint="correo electronico"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tlf" />
+            <TextView
+                android:id="@+id/tlf"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#FFF7AE"
+                android:hint="telefono"
+                android:translationX="20dp"
+                android:translationY="35dp" />
 
-        <TextView
-            android:id="@+id/edad"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="32dp"
-            android:background="#E6D9FD"
-            android:hint="edad"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/correo" />
+            <TextView
+                android:id="@+id/correo"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#C1F8C4"
+                android:hint="correo electronico"
+                android:translationX="35dp"
+                android:translationY="70dp" />
+
+            <TextView
+                android:id="@+id/edad"
+                android:layout_width="170dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="32dp"
+                android:background="#E6D9FD"
+                android:hint="edad"
+                android:translationX="195dp"
+                android:translationY="35dp" />
+        </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
