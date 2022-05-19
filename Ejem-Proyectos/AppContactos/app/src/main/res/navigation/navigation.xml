@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listaContactosFragment">
+
+    <fragment
+        android:id="@+id/listaContactosFragment"
+        android:name="com.estech.appcontactos.ui.ListaContactosFragment"
+        android:label="ListaContactosFragment" >
+        <action
+            android:id="@+id/action_listaContactosFragment_to_aniadirContactoFragment"
+            app:destination="@id/aniadirContactoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/celdacontacto"
+        android:name="com.estech.appcontactos.ui.anadircontacto"
+        android:label="fragment_celdacontacto"
+        tools:layout="@layout/fragment_celdacontacto" />
+    <fragment
+        android:id="@+id/aniadirContactoFragment"
+        android:name="com.estech.appcontactos.AniadirContactoFragment"
+        android:label="fragment_aniadir_contacto"
+        tools:layout="@layout/fragment_aniadir_contacto" />
+</navigation>
