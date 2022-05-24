@@ -1,13 +1,20 @@
 package com.estech.googlemapssample
 
+import android.Manifest
+import android.app.Instrumentation
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContract
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.estech.googlemapssample.databinding.ActivityMainBinding
 import com.estech.googlemapssample.databinding.CustomWindowInfoBinding
@@ -20,6 +27,7 @@ import com.google.android.gms.maps.model.*
 class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var mapa: GoogleMap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,90 +39,184 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
         fragment.getMapAsync(this)
     }
 
+
+    private val camerapermission = registerForActivityResult(
+        ActivityResultContracts.RequestPermission()
+    ) {
+        if (it) {
+            funcionalidadcamera()
+        } else {
+            Toast.makeText(this, "no has dado permiso", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
+    private fun activarubicacion(){
+        if (ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+            && ActivityCompat.checkSelfPermission(
+                this,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) == PackageManager.PERMISSION_GRANTED
+        ){
+            mapa.isMyLocationEnabled = true
+        }
+    }
+
+    private val ubicacionpermission = registerForActivityResult(
+        ActivityResultContracts.RequestMultiplePermissions()
+    ) {
+
+        if(it.containsValue(false)){
+            Toast.makeText(this,"no has aceptado los permisos", Toast.LENGTH_SHORT).show()
+        }else{
+            activarubicacion()
+        }
+
+
+        it.forEach{ mapa->
+            when(mapa.key){
+                Manifest.permission.ACCESS_FINE_LOCATION ->
+                {if (mapa.value){
+                    Log.d("aceptado", "fine aceptado")
+                }}
+                Manifest.permission.ACCESS_COARSE_LOCATION ->
+                {if (mapa.value){
+                    Log.d("aceptado", " coarse aceptado")}
+                }
+            }
+        }
+    }
+
+    private fun funcionalidadcamera() {
+        Toast.makeText(this, "hola permiso camera", Toast.LENGTH_SHORT).show()
+    }
+
+
     override fun onMapReady(map: GoogleMap) {
 
-        /* TIPO DE MAPA */
-        map.mapType = GoogleMap.MAP_TYPE_HYBRID
+        mapa = map
+
+        binding.idcamera.setOnClickListener {
+
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.CAMERA
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
+                funcionalidadcamera()
+            } else {
+                camerapermission.launch(Manifest.permission.CAMERA)
+            }
+
+
+        }
+
+        binding.ubicacion.setOnClickListener {
+
+            if (ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION
+                ) == PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.ACCESS_FINE_LOCATION
+                ) == PackageManager.PERMISSION_GRANTED
+            ) {
+               activarubicacion()
+            } else {
+                ubicacionpermission.launch(
+                    arrayOf(
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                    )
+                )
+            }
+
+            /* TIPO DE MAPA */
+            map.mapType = GoogleMap.MAP_TYPE_HYBRID
 //        GoogleMap.MAP_TYPE_NONE
 //        GoogleMap.MAP_TYPE_NORMAL
 //        GoogleMap.MAP_TYPE_SATELLITE
 //        GoogleMap.MAP_TYPE_TERRAIN
 
-        map.isTrafficEnabled = true  //trafico activado
-        val traffic = map.isTrafficEnabled  //devuelve true si el tráfico está activado
+            map.isTrafficEnabled = true  //trafico activado
+            val traffic = map.isTrafficEnabled  //devuelve true si el tráfico está activado
 
 
-        val uiSettings = map.uiSettings
-        uiSettings.isZoomControlsEnabled = true //controles de zoom
+            val uiSettings = map.uiSettings
+            uiSettings.isZoomControlsEnabled = true //controles de zoom
 
-        uiSettings.isCompassEnabled = true //mostrar la brújula
+            uiSettings.isCompassEnabled = true //mostrar la brújula
 
-        uiSettings.isZoomGesturesEnabled = true //gestos de zoom
+            uiSettings.isZoomGesturesEnabled = true //gestos de zoom
 
-        uiSettings.isScrollGesturesEnabled = true //Gestos de scroll
+            uiSettings.isScrollGesturesEnabled = true //Gestos de scroll
 
-        uiSettings.isTiltGesturesEnabled = true //Gestos de ángulo
+            uiSettings.isTiltGesturesEnabled = true //Gestos de ángulo
 
-        uiSettings.isRotateGesturesEnabled = true //Gestos de rotación
+            uiSettings.isRotateGesturesEnabled = true //Gestos de rotación
 
 
 //         asignar max y min zoom al mapa (3 a 22)
 //        map.setMinZoomPreference(10.0f)
 //        map.setMaxZoomPreference(14.0f)
 
-        //Mover cámara
-        val latLng = LatLng(38.38, -3.78)  //LatLng es latitud y longitud en double
+            //Mover cámara
+            val latLng = LatLng(38.38, -3.78)  //LatLng es latitud y longitud en double
 //        val cu = CameraUpdateFactory.newLatLng(latLng)
-        val cuZoom = CameraUpdateFactory.newLatLngZoom(latLng,4f)
+            val cuZoom = CameraUpdateFactory.newLatLngZoom(latLng, 4f)
 
-        //float determina el nivel de zoom, siendo 1 el más lejano
+            //float determina el nivel de zoom, siendo 1 el más lejano
 
-        // mueve la cámara a una ubicación
+            // mueve la cámara a una ubicación
 
-        map.moveCamera(cuZoom)
+            map.moveCamera(cuZoom)
 
-        binding.fabRefresh.setOnClickListener {
-            val madrid = CameraUpdateFactory.newLatLngZoom(
-                LatLng(40.42062134847416, -3.7042661462520288),
-                7f
-            )
-            map.animateCamera(madrid)
-        }
+            binding.fabRefresh.setOnClickListener {
+                val madrid = CameraUpdateFactory.newLatLngZoom(
+                    LatLng(40.42062134847416, -3.7042661462520288),
+                    7f
+                )
+                map.animateCamera(madrid)
+            }
 
-        binding.fabZoom.setOnClickListener {
-            val maxZoom = CameraUpdateFactory.zoomTo(20f)
-            map.animateCamera(maxZoom)
-        }
+            binding.fabZoom.setOnClickListener {
+                val maxZoom = CameraUpdateFactory.zoomTo(20f)
+                map.animateCamera(maxZoom)
+            }
 
-        // centrar mapa en un área
-        val madrid = LatLng(40.47883646461693, -3.7692950517063832)
-        val paris = LatLng(48.92116447022164, 2.4269937759977664)
-        val roma = LatLng(41.835314517079205, 12.446524646327886)
-        val region = LatLngBounds.Builder()
-            .include(madrid)
-            .include(paris)
-            .include(roma)
-            .build()
+            // centrar mapa en un área
+            val madrid = LatLng(40.47883646461693, -3.7692950517063832)
+            val paris = LatLng(48.92116447022164, 2.4269937759977664)
+            val roma = LatLng(41.835314517079205, 12.446524646327886)
+            val region = LatLngBounds.Builder()
+                .include(madrid)
+                .include(paris)
+                .include(roma)
+                .build()
 
 // map.moveCamera(CameraUpdateFactory.newLatLngZoom(australia.center, 3f))
 //
 //      listener para esperar que el mapa esté cargado
-        map.setOnMapLoadedCallback {
-            map.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 20))
-        }
+            map.setOnMapLoadedCallback {
+                map.animateCamera(CameraUpdateFactory.newLatLngBounds(region, 20))
+            }
 
-        // listener al pulsar un punto de interés
+            // listener al pulsar un punto de interés
 
-        // listener al pulsar un punto de interés
-        map.setOnPoiClickListener { pointOfInterest ->
-            Toast.makeText(
-                 this@MainActivity,
-                "Nombre del sitio: " + pointOfInterest.name,
-                Toast.LENGTH_SHORT
-            ).show()
-            val ubicacion = pointOfInterest.latLng
-            map.animateCamera(CameraUpdateFactory.newLatLng(ubicacion))
-        }
+            // listener al pulsar un punto de interés
+            map.setOnPoiClickListener { pointOfInterest ->
+                Toast.makeText(
+                    this@MainActivity,
+                    "Nombre del sitio: " + pointOfInterest.name,
+                    Toast.LENGTH_SHORT
+                ).show()
+                val ubicacion = pointOfInterest.latLng
+                map.animateCamera(CameraUpdateFactory.newLatLng(ubicacion))
+            }
 
 //        map.setOnMapClickListener {
 //           val option1 = MarkerOptions()
@@ -126,82 +228,83 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //            .draggable(true)-- permite arrastrar marcadores
 //        }
 
-        // añadir marker
-        val options1 = MarkerOptions()
-            .position(LatLng(38.5, -3.3))
-            .title("Sitio")
-            .snippet("Pulsa aquí para acceder")
-            .alpha(.6f)
-            .rotation(90f)
-        val marker1 = map.addMarker(options1)
+            // añadir marker
+            val options1 = MarkerOptions()
+                .position(LatLng(38.5, -3.3))
+                .title("Sitio")
+                .snippet("Pulsa aquí para acceder")
+                .alpha(.6f)
+                .rotation(90f)
+            val marker1 = map.addMarker(options1)
 //
-        val options2 = MarkerOptions()
-            .position(LatLng(38.09418604624217, -3.6312538))
-            .title("Sitio2")
-            .snippet("Pulsa aquí para acceder")
-            .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker))
-        val marker2 = map.addMarker(options2)
+            val options2 = MarkerOptions()
+                .position(LatLng(38.09418604624217, -3.6312538))
+                .title("Sitio2")
+                .snippet("Pulsa aquí para acceder")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker))
+            val marker2 = map.addMarker(options2)
 //
-        val options3 = MarkerOptions()
-            .position(LatLng(39.5, -2.3))
-            .title("Sitio3")
-            .snippet("Pulsa aquí para acceder")
-            .flat(true)
-        val marker3 = map.addMarker(options3)
+            val options3 = MarkerOptions()
+                .position(LatLng(39.5, -2.3))
+                .title("Sitio3")
+                .snippet("Pulsa aquí para acceder")
+                .flat(true)
+            val marker3 = map.addMarker(options3)
 //
-        val options4 = MarkerOptions()
-            .position(LatLng(37.5, -4.3))
-            .title("Sitio4")
-            .snippet("Pulsa aquí para acceder")
-            .flat(true)
-            .draggable(true)
-            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
-        val marker4 = map.addMarker(options4)
-        marker4?.tag = "mimarker"
+            val options4 = MarkerOptions()
+                .position(LatLng(37.5, -4.3))
+                .title("Sitio4")
+                .snippet("Pulsa aquí para acceder")
+                .flat(true)
+                .draggable(true)
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
+            val marker4 = map.addMarker(options4)
+            marker4?.tag = "mimarker"
 
 
-        // listener draggable para arrastrar y solar marker
-        map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {
-            override fun onMarkerDrag(p0: Marker) {
+            // listener draggable para arrastrar y solar marker
+            map.setOnMarkerDragListener(object : GoogleMap.OnMarkerDragListener {
+                override fun onMarkerDrag(p0: Marker) {
+                }
+
+                //
+                override fun onMarkerDragEnd(marker: Marker) {
+                    if (marker.tag == "mimarker") {
+                        val latLng1 = marker.position
+                        val latitud = latLng1.latitude
+                        val longitud = latLng1.longitude
+                        Toast.makeText(
+                            this@MainActivity,
+                            "Latitud: $latitud, Longitud: $longitud",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+
+                override fun onMarkerDragStart(p0: Marker) {
+                }
+            })
+
+//        click en el marker
+            map.setOnMarkerClickListener { marker ->
+                if (marker == marker2) {
+                    Toast.makeText(this@MainActivity, "Escuela Estech", Toast.LENGTH_SHORT).show()
+                }
+                false
             }
-//
-            override fun onMarkerDragEnd(marker: Marker) {
-                if (marker.tag == "mimarker") {
-                    val latLng1 = marker.position
-                    val latitud = latLng1.latitude
-                    val longitud = latLng1.longitude
-                    Toast.makeText(
-                        this@MainActivity,
-                        "Latitud: $latitud, Longitud: $longitud",
-                        Toast.LENGTH_SHORT
-                    ).show()
+
+            //click en cartel del marker
+            map.setOnInfoWindowClickListener { marker ->
+                if (marker == marker2) {
+                    val i = Intent(Intent.ACTION_VIEW)
+                    i.data = Uri.parse("https://escuelaestech.es")
+                    startActivity(i)
                 }
             }
 
-            override fun onMarkerDragStart(p0: Marker) {
-            }
-        })
+            // eliminar marker
 
-//        click en el marker
-        map.setOnMarkerClickListener { marker ->
-            if (marker == marker2) {
-                Toast.makeText(this@MainActivity, "Escuela Estech", Toast.LENGTH_SHORT).show()
-            }
-            false
-        }
-
-        //click en cartel del marker
-        map.setOnInfoWindowClickListener { marker ->
-            if (marker == marker2) {
-                val i = Intent(Intent.ACTION_VIEW)
-                i.data = Uri.parse("https://escuelaestech.es")
-                startActivity(i)
-            }
-        }
-
-        // eliminar marker
-
-        // si se pincha sobre el mismo marcador se elimina
+            // si se pincha sobre el mismo marcador se elimina
 
 //        map.setOnMarkerClickListener {
 //           it.remove()
@@ -209,20 +312,20 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //        }
 
 
-        //Custom Window
-        map.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
-            override fun getInfoContents(p0: Marker): View {
-                val binding = CustomWindowInfoBinding.inflate(layoutInflater)
-                return binding.root
-            }
+            //Custom Window
+            map.setInfoWindowAdapter(object : GoogleMap.InfoWindowAdapter {
+                override fun getInfoContents(p0: Marker): View {
+                    val binding = CustomWindowInfoBinding.inflate(layoutInflater)
+                    return binding.root
+                }
 
-            override fun getInfoWindow(p0: Marker): View? {
-                return null
-            }
+                override fun getInfoWindow(p0: Marker): View? {
+                    return null
+                }
 
-        })
+            })
 
-        //Polyline
+            //Polyline
 //        var rectOptions = PolylineOptions()
 //            .color(Color.RED)
 //            .width(10f)
@@ -245,7 +348,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //        map.addPolyline(rectOptions)
 
 
-        //Polygon
+            //Polygon
 //        val options = PolygonOptions().strokeColor(Color.RED)
 //            .strokeWidth(20f)
 //            .fillColor(ContextCompat.getColor(this, R.color.semiTransparent))
@@ -260,7 +363,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //        val spainLine: Polygon = map.addPolygon(options)
 
 
-        // circle
+            // circle
 //        val circleOptions = CircleOptions()
 //            .center(LatLng(38.93515236530402, -100.83512605947585))
 //            .radius(2000000.0)
@@ -270,7 +373,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //            .fillColor(ContextCompat.getColor(this, R.color.semiTransparent))
 //        val circleUsa: Circle = map.addCircle(circleOptions)
 
-        // click sobre las formas
+            // click sobre las formas
 //        map.setOnPolylineClickListener { polyline ->
 //            if (polyline == campoFutbol) {
 //                Toast.makeText(this@MainActivity, "Dar vueltas al campo", Toast.LENGTH_SHORT).show()
@@ -307,5 +410,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 //                builder.create().show()
 //            }
 //        }
+        }
     }
 }
