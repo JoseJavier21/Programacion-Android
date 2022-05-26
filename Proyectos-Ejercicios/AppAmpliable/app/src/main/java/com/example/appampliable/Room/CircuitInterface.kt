@@ -4,12 +4,27 @@ import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import androidx.room.Update
 import com.example.appampliable.TablaCircuit.TablaCircuit
 
 @Dao
 interface CircuitInterface {
 
+    // crear ciudad
     @Insert
     suspend fun insertCircuito(): LiveData<List<TablaCircuit>>
+
+    //Seleccionar un circuito
+    @Query("select * from circuitos where id = :id")
+    fun getcircuito(id: Int): LiveData<List<TablaCircuit>>
+
+    //Borrar un circuito
+    @Query("select * from circuitos where id = :id")
+    suspend fun delete(id: Int)
+
+    @Update
+    suspend fun modify(circuit: TablaCircuit)
+
+
 
 }

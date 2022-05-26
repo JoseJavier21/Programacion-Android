@@ -4,14 +4,15 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.appampliable.TablaCircuit.TablaCircuit
 
 
-@Database(entities = [Repositorio::class], version = 1)
+@Database(entities = [TablaCircuit::class], version = 1)
 abstract class CircuitDataBase: RoomDatabase(){
         abstract fun CircuitInterface(): CircuitInterface
 
         companion object {
-            const val DBNAME = "movie_database"
+            const val DBNAME = "Circuitos"
 
             @Volatile
             private var INSTANCE: CircuitDataBase? = null
