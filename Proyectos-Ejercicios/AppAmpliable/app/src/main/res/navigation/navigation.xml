@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listaFragment2">
+
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.example.appampliable.Vistas.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_mapaFragment_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aniadirFragment"
+        android:name="com.example.appampliable.Vistas.AniadirFragment"
+        android:label="fragment_aniadir"
+        tools:layout="@layout/fragment_aniadir" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.appampliable.Vistas.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/listaFragment2"
+        android:name="com.example.appampliable.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_listaFragment2_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_listaFragment2_to_aniadirFragment"
+            app:destination="@id/aniadirFragment" />
+        <action
+            android:id="@+id/action_listaFragment2_to_infoFragment"
+            app:destination="@id/infoFragment" />
+    </fragment>
+</navigation>
