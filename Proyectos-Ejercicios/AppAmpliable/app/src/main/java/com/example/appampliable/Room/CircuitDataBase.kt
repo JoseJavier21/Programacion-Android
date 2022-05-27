@@ -5,6 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.appampliable.TablaCircuit.TablaCircuit
+import com.example.appampliable.ViewModel.ViewModel
 
 
 @Database(entities = [TablaCircuit::class], version = 1)
@@ -17,7 +18,7 @@ abstract class CircuitDataBase: RoomDatabase(){
             @Volatile
             private var INSTANCE: CircuitDataBase? = null
 
-            fun getDatabase(context: Context): CircuitDataBase {
+            fun getDatabase(context: ViewModel): CircuitDataBase {
                 val tempInstance = INSTANCE
                 if (tempInstance != null) {
                     return tempInstance

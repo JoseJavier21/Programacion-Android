@@ -3,40 +3,36 @@ package com.example.appampliable.Adapter
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import com.example.appampliable.Room.CircuitDataBase
+import com.example.appampliable.TablaCircuit.TablaCircuit
+import com.example.appampliable.databinding.CeldaBinding
 import com.example.appampliable.databinding.FragmentListaBinding
 
-//
-//class Adapter(
-//    private val values: List<RecyclerView>
-//) : RecyclerView.Adapter<Adapter.ViewHolder>() {
-//
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-//
-//        return ViewHolder(
-//            FragmentListaBinding.inflate(
-//                LayoutInflater.from(parent.context),
-//                parent,
-//                false
-//            )
-//        )
-//
-//    }
-//
-//    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        val item = values[position]
-//        holder.idView.text = item.id
-//        holder.contentView.text = item.content
-//    }
-//
-//    override fun getItemCount(): Int = values.size
-//
-//    inner class ViewHolder(binding: FragmentListaBinding) : RecyclerView.ViewHolder(binding.root) {
-//        val idView: TextView = binding.itemNumber
-//        val contentView: TextView = binding.content
-//
-//        override fun toString(): String {
-//            return super.toString() + " '" + contentView.text + "'"
-//        }
-//    }
+class CircuitAdapter : RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
 
-//}
+    var lista: ArrayList<TablaCircuit> = ArrayList()
+
+    inner class CircuitHolder(val binding: CeldaBinding): RecyclerView.ViewHolder(binding.root)
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CircuitHolder {
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val binding = CeldaBinding.inflate(layoutInflater, parent, false)
+        return CircuitHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: CircuitHolder, position: Int) {
+        val circuitos = lista[position]
+        holder.binding.nombre.text = circuitos.nombre
+        holder.binding.direccion.text = circuitos.direccion
+    }
+
+    override fun getItemCount(): Int{
+        return lista.size
+    }
+
+    fun updateCircuitlist(arrayList: ArrayList<TablaCircuit>){
+        lista.clear()
+        lista = arrayList
+        notifyDataSetChanged()
+    }
+}
