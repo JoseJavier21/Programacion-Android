@@ -39,10 +39,6 @@ class MyViewModel(val repository: Repositorio) : ViewModel() {
 
     }
 
-
-
-
-
     class MyViewModelFactory(val repository: Repositorio) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return modelClass.getConstructor(Repositorio::class.java)

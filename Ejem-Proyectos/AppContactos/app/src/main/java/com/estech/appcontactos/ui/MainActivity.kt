@@ -52,8 +52,6 @@ class MainActivity : AppCompatActivity() {
         binding.eliminar.setOnClickListener {
         }
 
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {

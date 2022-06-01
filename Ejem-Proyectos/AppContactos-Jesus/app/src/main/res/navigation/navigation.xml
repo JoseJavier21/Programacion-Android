@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/listaContactosFragment">
+
+    <fragment
+        android:id="@+id/listaContactosFragment"
+        android:name="com.estech.appcontactos.ui.ListaContactosFragment"
+        android:label="ListaContactosFragment" >
+        <action
+            android:id="@+id/action_listaContactosFragment_to_fragmentAgregarForm"
+            app:destination="@id/fragmentAgregarForm" />
+        <action
+            android:id="@+id/action_listaContactosFragment_to_fragmentListaFav"
+            app:destination="@id/fragmentListaFav" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAgregarForm"
+        android:name="com.estech.appcontactos.ui.FragmentAgregarForm"
+        android:label="FragmentAgregarForm" >
+        <action
+            android:id="@+id/action_fragmentAgregarForm_to_listaContactosFragment"
+            app:destination="@id/listaContactosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentListaFav"
+        android:name="com.estech.appcontactos.ui.FragmentListaFav"
+        android:label="FragmentListaFav" >
+        <action
+            android:id="@+id/action_fragmentListaFav_to_listaContactosFragment"
+            app:destination="@id/listaContactosFragment" />
+    </fragment>
+</navigation>

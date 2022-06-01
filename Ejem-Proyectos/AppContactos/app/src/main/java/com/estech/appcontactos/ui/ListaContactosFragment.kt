@@ -71,8 +71,8 @@ class ListaContactosFragment: Fragment() {
             requireContext(),
             LinearLayoutManager.VERTICAL, false)
 
-        adapter = Adapter(viewModel)
+        movieAdapter = Adapter(viewModel)
         binding.recycler.layoutManager = layoutManager
-        binding.recycler.adapter = adapter
+        binding.recycler.adapter = movieAdapter
     }
 }

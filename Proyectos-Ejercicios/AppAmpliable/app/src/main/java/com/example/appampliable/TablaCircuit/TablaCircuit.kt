@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "Circuitos")
+@Entity
 data class TablaCircuit(
     var nombre: String,
     var ciudad: String,

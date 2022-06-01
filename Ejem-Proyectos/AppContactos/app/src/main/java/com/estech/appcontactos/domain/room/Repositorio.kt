@@ -28,7 +28,7 @@ class Repositorio(private val contactosDao: ContactosDao) {
 
     //Buscador de contacto
     suspend fun searchContact(){
-        contactosDao.searchContact(nombre = " ")
+        contactosDao.searchContact(nombre = "")
     }
 
     //Actualizar un contacto

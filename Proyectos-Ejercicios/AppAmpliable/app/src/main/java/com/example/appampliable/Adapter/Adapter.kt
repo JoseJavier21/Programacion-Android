@@ -3,12 +3,13 @@ package com.example.appampliable.Adapter
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModel
 import com.example.appampliable.Room.CircuitDataBase
 import com.example.appampliable.TablaCircuit.TablaCircuit
 import com.example.appampliable.databinding.CeldaBinding
 import com.example.appampliable.databinding.FragmentListaBinding
 
-class CircuitAdapter : RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
+class CircuitAdapter(val viewmodel: ViewModel): RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
 
     var lista: ArrayList<TablaCircuit> = ArrayList()
 
@@ -21,9 +22,8 @@ class CircuitAdapter : RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
     }
 
     override fun onBindViewHolder(holder: CircuitHolder, position: Int) {
-        val circuitos = lista[position]
+        val circuitos: TablaCircuit = lista.get(position)
         holder.binding.nombre.text = circuitos.nombre
-        holder.binding.direccion.text = circuitos.direccion
     }
 
     override fun getItemCount(): Int{

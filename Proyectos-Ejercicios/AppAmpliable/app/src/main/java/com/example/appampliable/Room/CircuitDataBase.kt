@@ -18,7 +18,7 @@ abstract class CircuitDataBase: RoomDatabase(){
             @Volatile
             private var INSTANCE: CircuitDataBase? = null
 
-            fun getDatabase(context: ViewModel): CircuitDataBase {
+            fun getDatabase(context: Context): CircuitDataBase {
                 val tempInstance = INSTANCE
                 if (tempInstance != null) {
                     return tempInstance

@@ -6,10 +6,21 @@ import com.example.appampliable.TablaCircuit.TablaCircuit
 
 class Repositorio(private val circuitInterface: CircuitInterface){
 
-    val uncircuito: LiveData<List<TablaCircuit>> = circuitInterface.insertCircuito()
+    val todoscircuitos = circuitInterface.getcircuit()
 
-    suspend fun insert(circuit: TablaCircuit){
-        circuitInterface.insertCircuito()
+    fun getcircuit(circuit: TablaCircuit){
+        circuitInterface.getcircuit()
     }
 
+//    suspend fun modify(){
+//        circuitInterface.modify()
+//    }
+
+    suspend fun insertCircuito(circuit: TablaCircuit){
+        circuitInterface.insertCircuito(circuit)
+    }
+
+    suspend fun searchCircuito(){
+        circuitInterface.searchCircuit("")
+    }
 }
