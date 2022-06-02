@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/listaFragment2">
+    app:startDestination="@id/listaFragment">
 
     <fragment
         android:id="@+id/mapaFragment"
@@ -25,7 +25,7 @@
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
     <fragment
-        android:id="@+id/listaFragment2"
+        android:id="@+id/listaFragment"
         android:name="com.example.appampliable.ListaFragment"
         android:label="fragment_lista"
         tools:layout="@layout/fragment_lista" >

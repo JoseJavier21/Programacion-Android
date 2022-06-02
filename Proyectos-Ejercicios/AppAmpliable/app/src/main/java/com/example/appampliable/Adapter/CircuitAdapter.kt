@@ -9,9 +9,9 @@ import com.example.appampliable.TablaCircuit.TablaCircuit
 import com.example.appampliable.databinding.CeldaBinding
 import com.example.appampliable.databinding.FragmentListaBinding
 
-class CircuitAdapter(val viewmodel: ViewModel): RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
+class CircuitAdapter(val viewMoel:ViewModel): RecyclerView.Adapter<CircuitAdapter.CircuitHolder>(){
 
-    var lista: ArrayList<TablaCircuit> = ArrayList()
+    var listacir: ArrayList<TablaCircuit> = ArrayList()
 
     inner class CircuitHolder(val binding: CeldaBinding): RecyclerView.ViewHolder(binding.root)
 
@@ -22,17 +22,17 @@ class CircuitAdapter(val viewmodel: ViewModel): RecyclerView.Adapter<CircuitAdap
     }
 
     override fun onBindViewHolder(holder: CircuitHolder, position: Int) {
-        val circuitos: TablaCircuit = lista.get(position)
+        val circuitos: TablaCircuit = listacir.get(position)
         holder.binding.nombre.text = circuitos.nombre
     }
 
     override fun getItemCount(): Int{
-        return lista.size
+        return listacir.size
     }
 
     fun updateCircuitlist(arrayList: ArrayList<TablaCircuit>){
-        lista.clear()
-        lista = arrayList
+        listacir.clear()
+        listacir = arrayList
         notifyDataSetChanged()
     }
 }

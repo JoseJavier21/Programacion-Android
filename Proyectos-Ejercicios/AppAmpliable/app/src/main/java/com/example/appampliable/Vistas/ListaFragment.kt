@@ -7,16 +7,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.appampliable.Adapter.CircuitAdapter
 import com.example.appampliable.MyApp
 import com.example.appampliable.R
-import com.example.appampliable.Room.CircuitDataBase
-import com.example.appampliable.Room.CircuitInterface
-import com.example.appampliable.Room.Repositorio
+import com.example.appampliable.TablaCircuit.TablaCircuit
 import com.example.appampliable.ViewModel.ViewModel
+import com.example.appampliable.databinding.FragmentListaBinding
 
 class ListaFragment : Fragment() {
 
-    private lateinit var binding: ListaFragment
+    private lateinit var binding: FragmentListaBinding
+    private lateinit var adapter: CircuitAdapter
 
 
     @SuppressLint("ResourceType")
@@ -25,16 +27,29 @@ class ListaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.id.listaFragment2, container, false)
+        binding = FragmentListaBinding.inflate(layoutInflater, container, false)
+        return (binding.root)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        myApp = requireActivity().application as MyApp
+        val myApp = requireActivity().application as MyApp
         val viewMoel : ViewModel by activityViewModels{
-
-
+            ViewModel.MyViewModelFactory(myApp.repositorio)
         }
+        configRecycler(viewMoel)
+
+        viewMoel.todoscircuitos.observe(viewLifecycleOwner){
+            adapter.updateCircuitlist(it as ArrayList<TablaCircuit>)
+        }
+
+
+    }
+
+    private fun configRecycler(viewMoel: ViewModel) {
+        adapter = CircuitAdapter(viewMoel)
+        binding.listaRV.layoutManager = LinearLayoutManager(requireContext())
+        binding.listaRV.adapter
     }
 }
