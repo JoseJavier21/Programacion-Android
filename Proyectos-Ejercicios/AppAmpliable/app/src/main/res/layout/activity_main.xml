@@ -6,11 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView4"
-        android:name="com.example.appampliable.Vistas.AniadirFragment"
+    <fragment
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.appampliable.Vistas.ListaFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -18,7 +18,11 @@
         android:id="@+id/aniadirFragment"
         android:name="com.example.appampliable.Vistas.AniadirFragment"
         android:label="fragment_aniadir"
-        tools:layout="@layout/fragment_aniadir" />
+        tools:layout="@layout/fragment_aniadir" >
+        <action
+            android:id="@+id/action_aniadirFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/infoFragment"
         android:name="com.example.appampliable.Vistas.InfoFragment"

@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navController = findNavController(R.id.fragmentContainerView4)
+        val navController = findNavController(R.id.fragmentContainerView)
         appBarConfiguration = AppBarConfiguration(navController.graph)
         setupActionBarWithNavController(navController, appBarConfiguration)
 
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.fragmentContainerView4)
+        val navController = findNavController(R.id.fragmentContainerView)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
     }
