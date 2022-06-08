@@ -68,7 +68,6 @@ class ListaContactosFragment: Fragment() {
         }
     }
 
-
     private fun configRecycler(vm : MyViewModel){
         adapter = ListaContactoAdapter(vm)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())

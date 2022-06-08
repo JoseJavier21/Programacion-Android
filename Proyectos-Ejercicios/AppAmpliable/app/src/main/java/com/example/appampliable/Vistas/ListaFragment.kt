@@ -35,21 +35,21 @@ class ListaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val myApp = requireActivity().application as MyApp
-        val viewMoel : ViewModel by activityViewModels{
+        val vm: ViewModel by activityViewModels{
             ViewModel.MyViewModelFactory(myApp.repositorio)
         }
-        configRecycler(viewMoel)
+        configRecycler(vm)
 
-        viewMoel.todoscircuitos.observe(viewLifecycleOwner){
+        vm.todoscircuitos.observe(viewLifecycleOwner){
             adapter.updateCircuitlist(it as ArrayList<TablaCircuit>)
         }
 
 
     }
 
-    private fun configRecycler(viewMoel: ViewModel) {
-        adapter = CircuitAdapter(viewMoel)
+    private fun configRecycler(vm: ViewModel) {
+        adapter = CircuitAdapter(vm)
         binding.listaRV.layoutManager = LinearLayoutManager(requireContext())
-        binding.listaRV.adapter
+        binding.listaRV.adapter = adapter
     }
 }

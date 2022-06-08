@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appampliable.Adapter.CircuitAdapter
 import com.example.appampliable.MyApp
 import com.example.appampliable.R
@@ -29,13 +31,16 @@ class AniadirFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val myApp = requireActivity().application as MyApp
-        val viewMoel : ViewModel by activityViewModels{
-            ViewModel.MyViewModelFactory(myApp.repositorio)
+        val MyApp = requireActivity().application as MyApp
+        val vm: ViewModel by activityViewModels{
+            
         }
+
 
 
     }
 
-
+    private fun configRecycler(vm: ViewModel) {
+        adapter = CircuitAdapter(vm)
+    }
 }
