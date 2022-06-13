@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Personaje(
+data class Valorant(
     @SerializedName("id")
     val id : Int,
 

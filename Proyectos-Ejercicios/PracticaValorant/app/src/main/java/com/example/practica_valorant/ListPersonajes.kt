@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.practica_valorant.databinding.FragmentListPersonajesBinding
-import com.example.practica_valorant.modelos.Personaje
+import com.example.practica_valorant.modelos.Valorant
 import com.google.gson.Gson
 import org.json.JSONException
 import java.io.InputStream
@@ -36,10 +36,7 @@ class ListPersonajes : Fragment() {
         if (jsonEnString != null) {
             val gson = Gson()
             val listapersonajes = gson
-                .fromJson(
-                    jsonEnString,
-                    Array< Personaje>::class.java)
-                .asList()
+                .fromJson(jsonEnString,Array<Valorant>::class.java).asList()
             configRecycler(listapersonajes)
         }
     }
@@ -47,7 +44,7 @@ class ListPersonajes : Fragment() {
     private fun getJsonAsset(): String? {
         var jsonString: String? = null
         try {
-            val inputStream: InputStream = requireContext().assets.open("personajes.json")
+            val inputStream: InputStream = requireContext().assets.open("valorant.json")
             jsonString = inputStream.bufferedReader().use {
                 it.readText()
             }
@@ -57,12 +54,11 @@ class ListPersonajes : Fragment() {
         return jsonString
     }
 
-    private fun configRecycler(listaPersonajes: List<Personaje>)
+    private fun configRecycler(listaPersonajes: List<Valorant>)
     {
         val recyclerView = binding.recycleView
-        val adapter = AdapterPerso(listaPersonajes)
-        val layoutManager = StaggeredGridLayoutManager(
-            2,
+        val adapter = AdapterPerso(listaPersonajes as ArrayList<Valorant>)
+        val layoutManager = StaggeredGridLayoutManager(2,
             StaggeredGridLayoutManager.VERTICAL
         )
         recyclerView.layoutManager = layoutManager

@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.practica_valorant.databinding.ActivityMainBinding
 import com.example.practica_valorant.databinding.FragmentInfoPersonajBinding
-import com.example.practica_valorant.modelos.Personaje
+import com.example.practica_valorant.modelos.Valorant
 
 
 class InfoPersonaj : Fragment() {
@@ -26,7 +26,7 @@ class InfoPersonaj : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val personaje : Personaje? = arguments?.getParcelable("personaje")
+        val personaje : Valorant? = arguments?.getParcelable("valorant")
         if (personaje != null){
             (requireActivity() as MainActivity).supportActionBar?.title = personaje.description
             binding.nombrepersoj.text = personaje.description
