@@ -47,7 +47,7 @@ class ListPersonajes : Fragment() {
     private fun getJsonAsset(): String? {
         var jsonString: String? = null
         try {
-            val inputStream: InputStream = requireContext().assets.open("personajes.json")
+            val inputStream: InputStream = requireContext().assets.open("valorant.json")
             jsonString = inputStream.bufferedReader().use {
                 it.readText()
             }

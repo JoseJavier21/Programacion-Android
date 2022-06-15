@@ -27,6 +27,7 @@ class AdapterPerso(val personajes: List<Personaje>) : RecyclerView.Adapter<Adapt
         holder.binding.nombreper.text = personaje.nombrePersonaje
 
         Glide.with(holder.itemView).load(personaje.image).into(holder.binding.renderperso)
+        Glide.with(holder.itemView).load(personaje.nombrePersonaje).into(holder.binding.caracter)
 
         holder.itemView.setOnClickListener {
             val bundle = bundleOf("personaje" to personaje)

@@ -28,9 +28,10 @@ class InfoPersonaj : Fragment() {
 
         val personaje : Personaje? = arguments?.getParcelable("personaje")
         if (personaje != null){
-            (requireActivity() as MainActivity).supportActionBar?.title = personaje.description
-            binding.nombrepersoj.text = personaje.description
-            Glide.with(this).load(personaje.dispayName).into(binding.imageView)
+            (requireActivity() as MainActivity).supportActionBar?.title = personaje.nombrePersonaje
+            binding.nombrepersoj.text = personaje.nombrePersonaje
+            Glide.with(this).load(personaje.image).into(binding.previewperso)
+
         }
     }
 }
