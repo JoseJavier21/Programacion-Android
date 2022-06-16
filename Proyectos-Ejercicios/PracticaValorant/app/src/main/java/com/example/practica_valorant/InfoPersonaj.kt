@@ -30,7 +30,8 @@ class InfoPersonaj : Fragment() {
         if (personaje != null){
             (requireActivity() as MainActivity).supportActionBar?.title = personaje.description
             binding.nombrepersoj.text = personaje.description
-            Glide.with(this).load(personaje.dispayName).into(binding.imageView)
+            Glide.with(this).load(personaje.image).into(binding.imageView)
+            Glide.with(this).load(personaje.nombrePersonaje).into(binding.previewperso)
         }
     }
 }
