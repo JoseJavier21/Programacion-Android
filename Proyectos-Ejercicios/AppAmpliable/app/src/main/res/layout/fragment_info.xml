@@ -73,7 +73,7 @@
             android:id="@+id/nomcircuito"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
+            android:text="nombre Circuito"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,14 +89,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nomcircuito" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapView"
+        <fragment
+            android:id="@+id/mapavista"
+            android:name="com.example.appampliable.Vistas.MapFragment"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/valo" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

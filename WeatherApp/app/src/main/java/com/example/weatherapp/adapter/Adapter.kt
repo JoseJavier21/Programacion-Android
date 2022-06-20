@@ -1,4 +1,4 @@
-package com.example.weatherapp.vistas
+package com.example.weatherapp.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -2,32 +2,22 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    android:id="@+id/navigation"
+    app:startDestination="@id/mapFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
+        android:id="@+id/mapFragment"
+        android:name="com.example.weatherapp.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <fragment
+        android:id="@+id/firstFragment"
         android:name="com.example.weatherapp.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
-
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" />
     <fragment
-        android:id="@+id/SecondFragment"
+        android:id="@+id/secondFragment"
         android:name="com.example.weatherapp.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/mapsFragment"
-        android:name="com.example.weatherapp.MapsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
 </navigation>

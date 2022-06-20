@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tutiempo"
+        android:icon="@drawable/ic_baseline_cloud_24"
+        android:title="Tu Tiempo" />
+    <item
+        android:id="@+id/temperaturas"
+        android:icon="@drawable/ic_baseline_wb_sunny_24"
+        android:title="Temperaturas" />
 </menu>

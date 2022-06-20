@@ -1,10 +1,7 @@
 package com.example.appampliable.Room
 
 import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 import com.example.appampliable.TablaCircuit.TablaCircuit
 
 @Dao
@@ -14,16 +11,23 @@ interface CircuitInterface {
     @Insert
     suspend fun insertCircuito(vararg tablaCircuit: TablaCircuit)
 
-    @Query("select * from TablaCircuit")
-    fun getcircuit(): LiveData<List<TablaCircuit>>
+//    @Query("select * from TablaCircuit")
+//    fun getcircuit(): LiveData<List<TablaCircuit>>
 
     //Seleccionar un circuito
     @Query("select * from TablaCircuit where id = :id")
-    fun getcircuito(id: Int): LiveData<List<TablaCircuit>>
+    fun getcircuito(id: Int): TablaCircuit
 
-    //Borrar un circuito
-    @Query("select * from TablaCircuit where id = :id")
-    fun delete(id: Int): LiveData<List<TablaCircuit>>
+    //Seleccionar todos los circuitos
+    @Query("select * from TablaCircuit")
+    fun allcircuitos(): LiveData<List<TablaCircuit>>
+
+    //Borrar un circuitos
+    @Delete
+    suspend fun delete()
+
+    @Delete
+    suspend fun deleteunCircuito(tablaCircuit: TablaCircuit)
 
     //Actualizar lista
     @Update
@@ -31,6 +35,6 @@ interface CircuitInterface {
 
     //Buscar en lista
     @Query("select * from TablaCircuit where nombre like :nombre")
-    fun searchCircuit(nombre: String): LiveData<List<TablaCircuit>>
+    fun searchCircuit(nombre: String): TablaCircuit
 
 }

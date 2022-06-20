@@ -18,15 +18,32 @@ class ViewModel(val repositorio: Repositorio): ViewModel() {
        todoscircuitos = repositorio.todoscircuitos
     }
 
-//    suspend fun getCircuit(circuit: TablaCircuit) = CoroutineScope(Dispatchers.IO).launch {
-//        repositorio.getcircuit()
+//    suspend fun gecircuito(id: Int):TablaCircuit{
+//        CoroutineScope(Dispatchers.IO).launch {
+//            repositorio.getcircuito(id)
+//            return@launch
+//        }
 //    }
 
-    fun insertCircuito(circuit: TablaCircuit){
+    fun insertCircuito(tablaCircuit: TablaCircuit){
         CoroutineScope(Dispatchers.IO).launch {
-            repositorio.insertCircuito(circuit)
+            repositorio.insertCircuito(tablaCircuit)
         }
     }
+
+//    fun deleteunCircuito(tablaCircuit: TablaCircuit){
+//        CoroutineScope(Dispatchers.IO).launch{
+//            repositorio.delete(tablaCircuit)
+//        }
+//    }
+
+    fun delete(){
+        CoroutineScope(Dispatchers.IO).launch {
+            repositorio.delete()
+        }
+    }
+
+
 
     class MyViewModelFactory(val repositorio: Repositorio) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {

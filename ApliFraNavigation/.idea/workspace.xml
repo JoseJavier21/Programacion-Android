@@ -13,154 +13,266 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c628228d-6e32-4141-9202-a6d484c805bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/6.8/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/ic_launcher-playstore.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ApliFraNavigation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_2_4_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_ktx_1_2_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_experimental_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_common_2_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_asynclayoutinflater_asynclayoutinflater_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_collection_collection_ktx_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_constraintlayout_constraintlayout_2_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_7_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_7_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cursoradapter_cursoradapter_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_databinding_viewbinding_7_1_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_documentfile_documentfile_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_dynamicanimation_dynamicanimation_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_ktx_1_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_interpolator_interpolator_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_ui_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_core_utils_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_legacy_legacy_support_v4_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_ktx_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_ktx_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_ktx_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_savedstate_2_3_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_loader_loader_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_localbroadcastmanager_localbroadcastmanager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_media_media_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_common_ktx_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_fragment_ktx_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_runtime_ktx_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_navigation_navigation_ui_ktx_2_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_print_print_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_savedstate_savedstate_ktx_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_slidingpanelayout_slidingpanelayout_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_swiperefreshlayout_swiperefreshlayout_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_core_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_core_3_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_espresso_espresso_idling_resource_3_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_ext_junit_1_1_3_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_monitor_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_runner_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_test_services_storage_1_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_2_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_4_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_vectordrawable_vectordrawable_animated_1_1_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_versionedparcelable_versionedparcelable_1_1_1_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager2_viewpager2_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_viewpager_viewpager_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_5_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_javawriter_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__javax_inject_javax_inject_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_integration_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_6_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_6_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_6_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_6_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/ApliFraNavigation.app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/ApliFraNavigation/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/ApliFraNavigation/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/NavigationViewSample/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/NavigationViewSample/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/Contenedor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/Contenedor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/inicio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/java/com/example/proyectofinal/inicio.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/drawable/logof1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/drawable/logof1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/menu/desplegable_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/menu/desplegable_menu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/navigation/navegacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoFinal/app/src/main/res/navigation/navegacion.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/androidTest/java/com/estech/firebaseauthsample/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/MyApplication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/dominio/MyRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/dominio/Resource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/ui/LoginActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/ui/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/java/com/estech/firebaseauthsample/viewmodels/AuthViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/drawable/ic_todo.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/app/src/test/java/com/estech/firebaseauthsample/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejem-Proyectos/FirebaseAuthSample/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoGrupalMemoria/Parte de la Memoria.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/MapaSinScroll.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppContacto/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppContacto/app/src/main/java/com/example/appcontacto/Room/DataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppContacto/app/src/main/java/com/example/appcontacto/Room/Repositorio.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/androidTest/java/com/example/weatherapp/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/FirstFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/MapsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/Room/Dao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/Room/DataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/java/com/example/weatherapp/SecondFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/gotagua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/ic_baseline_cloud_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/ic_baseline_post_add_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/ic_baseline_wb_sunny_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/celda.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/fragment_maps.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values-land/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values-v29/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values-w1240dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values-w600dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/app/src/test/java/com/example/weatherapp/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/WeatherApp/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/androidTest/java/com/example/weatherapp/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/java/com/example/weatherapp/vistas/FirstFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/java/com/example/weatherapp/vistas/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/java/com/example/weatherapp/vistas/MapFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/java/com/example/weatherapp/vistas/SecondFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable/gotagua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable/ic_baseline_cloud_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable/ic_baseline_wb_sunny_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/layout/celda.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/layout/fragment_first.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/layout/fragment_map.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/layout/fragment_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/menu/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/app/src/test/java/com/example/weatherapp/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WeatherApp/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/androidTest/java/com/example/vistabotones/ExampleInstrumentedTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/dashboard/DashboardFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/dashboard/DashboardViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/home/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/home/HomeViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/notifications/NotificationsFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/java/com/example/vistabotones/ui/notifications/NotificationsViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/app/src/test/java/com/example/vistabotones/ExampleUnitTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vistabotones/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppGatosFinal/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppGatosFinal/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/22-JsonSampleClass/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/22-JsonSampleClass/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/22-JsonSampleClass/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/22-JsonSampleClass/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/ApliFraNavigation/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/ApliFraNavigation/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/src/main/java/com/estech/appcontactos/ui/FragmentAgregarForm.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/src/main/java/com/estech/appcontactos/ui/FragmentAgregarForm.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/src/main/java/com/estech/appcontactos/ui/ListaContactosFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejem-Proyectos/AppContactos-Jesus/app/src/main/java/com/estech/appcontactos/ui/ListaContactosFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Adapter/CircuitAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Adapter/CircuitAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Room/CircuitInterface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Room/CircuitInterface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Room/Repositorio.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Room/Repositorio.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/TablaCircuit/TablaCircuit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/TablaCircuit/TablaCircuit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/ViewModel/ViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/ViewModel/ViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/AniadirFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/AniadirFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/InfoFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/InfoFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/ListaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/ListaFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/MapFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/java/com/example/appampliable/Vistas/MapFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/celda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/celda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_aniadir.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_aniadir.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_lista.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/layout/fragment_lista.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppAmpliable/app/src/main/res/navigation/navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppContacto/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppContacto/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppGatos/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/AppGatos/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/InfoPersonaj.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/InfoPersonaj.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/ListPersonajes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/ListPersonajes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/adapter/AdapterPerso.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/adapter/AdapterPerso.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/modelos/Personaje.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/java/com/example/practica_valorant/modelos/Personaje.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/res/layout/fragment_list_personajes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Proyectos-Ejercicios/PracticaValorant/app/src/main/res/layout/fragment_list_personajes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +317,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ejem-Proyectos/ApliFraNavigation" />
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -222,8 +334,6 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
@@ -289,6 +399,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

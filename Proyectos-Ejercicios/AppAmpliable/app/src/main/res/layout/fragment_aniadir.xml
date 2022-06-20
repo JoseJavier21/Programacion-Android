@@ -127,8 +127,9 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.5" />
 
-        <com.google.android.gms.maps.MapView
-            android:id="@+id/mapaSelect"
+        <fragment
+            android:id="@+id/mapafraganiadir"
+            android:name="com.example.appampliable.Vistas.MapFragment"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintBottom_toTopOf="@+id/addpoint"

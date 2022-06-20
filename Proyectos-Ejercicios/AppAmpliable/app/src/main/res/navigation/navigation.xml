@@ -34,13 +34,13 @@
         android:label="fragment_lista"
         tools:layout="@layout/fragment_lista" >
         <action
-            android:id="@+id/action_listaFragment2_to_mapaFragment"
-            app:destination="@id/mapaFragment" />
-        <action
-            android:id="@+id/action_listaFragment2_to_aniadirFragment"
+            android:id="@+id/action_listaFragment_to_aniadirFragment"
             app:destination="@id/aniadirFragment" />
         <action
-            android:id="@+id/action_listaFragment2_to_infoFragment"
+            android:id="@+id/action_listaFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_listaFragment_to_infoFragment"
             app:destination="@id/infoFragment" />
     </fragment>
 </navigation>

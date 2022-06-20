@@ -4,23 +4,27 @@ import androidx.lifecycle.LiveData
 import com.example.appampliable.TablaCircuit.TablaCircuit
 
 
-class Repositorio(private val circuitInterface: CircuitInterface){
+class Repositorio(private val CircuitInterface: CircuitInterface){
 
-    val todoscircuitos = circuitInterface.getcircuit()
+    val todoscircuitos = CircuitInterface.allcircuitos()
 
-    fun getcircuit(circuit: TablaCircuit){
-        circuitInterface.getcircuit()
+    suspend fun insertCircuito(tablaCircuit: TablaCircuit){
+        CircuitInterface.insertCircuito(tablaCircuit)
     }
 
-//    suspend fun modify(){
-//        circuitInterface.modify()
+    suspend fun delete(){
+        CircuitInterface.delete()
+    }
+
+//    suspend fun getcircuito(tablaCircuit: TablaCircuit){
+//        return CircuitInterface.getcircuito(id)
 //    }
 
-    suspend fun insertCircuito(circuit: TablaCircuit){
-        circuitInterface.insertCircuito(circuit)
+    suspend fun deleteunCircuito(tablaCircuit: TablaCircuit){
+        CircuitInterface.deleteunCircuito(tablaCircuit)
     }
 
-    suspend fun searchCircuito(){
-        circuitInterface.searchCircuit("")
-    }
+//    suspend fun searchCircuito(){
+//        CircuitInterface.searchCircuit("")
+//    }
 }

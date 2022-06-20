@@ -46,6 +46,38 @@
                 app:layout_constraintStart_toEndOf="@+id/eliminar"
                 app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
+            <TextView
+                android:id="@+id/pais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/favorito"
+                app:layout_constraintStart_toEndOf="@+id/nombre"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+            <TextView
+                android:id="@+id/longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="100dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
             <ImageView
                 android:id="@+id/favorito"
                 android:layout_width="20dp"
