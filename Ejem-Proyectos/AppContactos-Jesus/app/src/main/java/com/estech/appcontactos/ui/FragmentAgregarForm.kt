@@ -11,9 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.estech.appcontactos.MyApp
 import com.estech.appcontactos.R
 import com.estech.appcontactos.databinding.FormAgregarBinding
-import com.estech.appcontactos.databinding.FragmentListaContactosBinding
 import com.estech.appcontactos.domain.models.Contacto
-import com.estech.appcontactos.ui.Adapter.ListaContactoAdapter
 import com.estech.appcontactos.viewmodel.MyViewModel
 
 class FragmentAgregarForm: Fragment() {

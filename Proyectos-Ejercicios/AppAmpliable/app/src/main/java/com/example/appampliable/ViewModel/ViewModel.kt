@@ -30,8 +30,7 @@ class ViewModel(val repositorio: Repositorio): ViewModel() {
 
     class MyViewModelFactory(val repositorio: Repositorio) : ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return modelClass.getConstructor(Repositorio::class.java)
-                .newInstance(repositorio)
+            return modelClass.getConstructor(Repositorio::class.java).newInstance(repositorio)
         }
     }
 }

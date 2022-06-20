@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.appampliable.R
+import com.example.appampliable.databinding.FragmentMapBinding
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -16,11 +17,13 @@ import com.google.android.gms.maps.model.MarkerOptions
 
 class MapFragment : Fragment() {
 
+    private lateinit var binding: FragmentMapBinding
+
     private val callback = OnMapReadyCallback { googleMap ->
 
-        val sydney = LatLng(-34.0, 151.0)
-        googleMap.addMarker(MarkerOptions().position(sydney).title("Marcador en Sydney"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+        val rusia = LatLng(52.0, 213.0)
+        googleMap.addMarker(MarkerOptions().position(rusia).title("Marcador en Rusia"))
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(rusia))
     }
 
     override fun onCreateView(
@@ -28,7 +31,8 @@ class MapFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_map, container, false)
+        binding = FragmentMapBinding.inflate(layoutInflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -10,9 +10,9 @@ data class TablaCircuit(
     var nombre: String,
     var ciudad: String,
     var pais: String,
-    var direccion: String,
-    var numero: Int,
-    var pregunta: Boolean,
+//    var direccion: String,
+//    var numero: Int,
+//    var pregunta: Boolean,
 //    val imagen: Bitmap
 ) {
     @PrimaryKey(autoGenerate = true)

@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.appampliable.Adapter.CircuitAdapter
 import com.example.appampliable.MyApp
@@ -35,21 +36,23 @@ class ListaFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val myApp = requireActivity().application as MyApp
-        val viewMoel : ViewModel by activityViewModels{
+        val viem: ViewModel by activityViewModels{
             ViewModel.MyViewModelFactory(myApp.repositorio)
         }
-        configRecycler(viewMoel)
+        configRecycler(viem)
 
-        viewMoel.todoscircuitos.observe(viewLifecycleOwner){
+        viem.todoscircuitos.observe(viewLifecycleOwner){
             adapter.updateCircuitlist(it as ArrayList<TablaCircuit>)
         }
 
-
+        binding.crearpunto.setOnClickListener {
+            findNavController().navigate(R.id.action_listaFragment2_to_aniadirFragment)
+        }
     }
 
-    private fun configRecycler(viewMoel: ViewModel) {
-        adapter = CircuitAdapter(viewMoel)
+    private fun configRecycler(viem: ViewModel) {
+        adapter = CircuitAdapter(viem)
         binding.listaRV.layoutManager = LinearLayoutManager(requireContext())
-        binding.listaRV.adapter
+        binding.listaRV.adapter = adapter
     }
 }
