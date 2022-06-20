@@ -8,12 +8,15 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.weatherapp.modelo.Forecast
 
-@Parcelize
 data class Tiempo(
 
     val location: String?,
 
     val region: String?,
+
+    val tiempo: Int?,
+
+    val imagen: String?,
 
     @SerializedName("pais")
     val country: String?,
@@ -27,4 +30,4 @@ data class Tiempo(
     val localTime: String?,
 
     val forecast: List<Forecast?>?
-): Parcelable
+)

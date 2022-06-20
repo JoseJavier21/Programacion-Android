@@ -11,9 +11,8 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class TiempoViewModel: ViewModel() {
+class TiempoViewModel(private val repositorio: Repositorio): ViewModel() {
 
-   private val repositorio by lazy { Repositorio(Dao()) }
 
    val tiempoLiveData: MutableLiveData<ArrayList<Tiempo>> by lazy {
       MutableLiveData<ArrayList<Tiempo>>()
