@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.weatherapp.R
 import com.example.weatherapp.adapter.Adapter
 import com.example.weatherapp.databinding.FragmentSecondBinding
 
@@ -20,17 +19,22 @@ class SecondFragment : Fragment() {
     ): View? {
         binding = FragmentSecondBinding.inflate(layoutInflater, container, false)
         return binding.root
+
+
     }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val meteo = mutableListOf("40.5")
+
+
         val recyclerView = binding.recyclerView
         val linear = LinearLayoutManager(requireContext())
         recyclerView.layoutManager = linear
-//        val adapter = Adapter()
-
+        val adapter = Adapter(meteo)
+        recyclerView.adapter = adapter
 
     }
 }

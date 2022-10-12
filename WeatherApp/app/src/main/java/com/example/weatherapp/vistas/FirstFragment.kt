@@ -22,7 +22,7 @@ import com.google.android.gms.maps.model.LatLng
 class FirstFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
-    private lateinit var mmap: GoogleMap
+    private lateinit var map: GoogleMap
     private lateinit var localitation: LatLng
     private lateinit var locationClient: FusedLocationProviderClient
 
@@ -40,29 +40,27 @@ class FirstFragment : Fragment() {
     private fun <T> findViewById(searchView: T) {
 
     }
-    private val callmapa = OnMapReadyCallback{ googleMap ->
-        mmap = googleMap
-        localitation = LatLng(0.0, 0.0)
-        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
-        locationClient  = context?.let { LocationServices.getFusedLocationProviderClient(it) }!!
 
-        googleMap.setMaxZoomPreference(0.5f)
-        googleMap.setMinZoomPreference(14.5f)
-
-
-
-    }
+//    private val getmapa = OnMapReadyCallback{ googleMap ->
+//        mmap = googleMap
+//        localitation = LatLng(0.0, 0.0)
+//        googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
+//        locationClient  = context?.let { LocationServices.getFusedLocationProviderClient(it) }!!
+//
+//        googleMap.setMaxZoomPreference(0.5f)
+//        googleMap.setMinZoomPreference(14.5f)
+//    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-    val mapafragment = childFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment?
-        mapafragment?.getMapAsync(callmapa)
+//    val mapafragment = childFragmentManager.findFragmentById(R.id.MapFragment) as SupportMapFragment?
+//        mapafragment?.getMapAsync(getmapa)
 
         val nav = findNavController()
 //        val ubi = requireActivity().application as wheaterclass
-//        val vm: ViewModel by activityViewModels(){
+//        val viem: ViewModel by activityViewModels(){
 //            ViewModel.MyViewModelFactory(wheaterclass.repositorio)
 //        }
 

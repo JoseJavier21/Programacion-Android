@@ -7,6 +7,6 @@ import com.example.weatherapp.room.Database
 class wheaterclass: Application(){
 
     val database by lazy { Database.getDatabase(this) }
-//    val repositorio by lazy { Repositorio(database.Dao())}
+    val repositorio by lazy { Repositorio(database.Dao())}
 
 }

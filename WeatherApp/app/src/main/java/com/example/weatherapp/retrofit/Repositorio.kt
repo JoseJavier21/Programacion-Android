@@ -2,7 +2,7 @@ package com.example.weatherapp.retrofit
 
 import androidx.room.Dao
 
-class Repositorio(private val dao: Dao) {
+class Repositorio(private val dao: com.example.weatherapp.room.Dao) {
 
     private val peticiones = Helper.getRetrofit()
 

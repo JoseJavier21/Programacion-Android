@@ -28,12 +28,9 @@ object Helper {
         return retrofitService!!
     }
 
-    /**
-     * Initialize OkhttpClient with our interceptor
-     */
     private fun okhttpClient(): OkHttpClient {
         val interceptor = HttpLoggingInterceptor {
-            Log.d("MI ETIQUETA", it)
+            Log.d("ALGO", it)
         }
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
 
