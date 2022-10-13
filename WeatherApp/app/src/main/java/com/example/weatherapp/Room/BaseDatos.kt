@@ -1,40 +1,38 @@
-package com.example.weatherapp.room
+package com.example.weatherapp.Room
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.example.weatherapp.modelo.Tiempo
+import com.example.weatherapp.room.Dao
 
 @Database(entities = [Tiempo::class], version = 1)
-abstract class Database : RoomDatabase() {
-    abstract fun Dao(): Dao
-    companion object{
+abstract class BaseDatos : RoomDatabase(){
+    abstract fun unoDao(): Dao
 
-        const val DBNAME = "cerveza_database"
+    companion object {
+        const val nombrebasedatos = "wheaterbasedatos"
 
         @Volatile
-        private var INSTANCE: com.example.weatherapp.room.Database? = null
+        private var INSTANCE: BaseDatos? = null
 
-        fun getDatabase(context: Context): com.example.weatherapp.room.Database {
+        fun getDatabase(context: Context): BaseDatos {
             val tempInstance = INSTANCE
             if (tempInstance != null) {
                 return tempInstance
             }
 
-            synchronized(com.example.weatherapp.room.Database::class) {
+            synchronized(BaseDatos::class) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    com.example.weatherapp.room.Database::class.java,
-                    DBNAME
+                    BaseDatos::class.java,
+                    nombrebasedatos
                 ).build()
 
                 INSTANCE = instance
                 return instance
             }
         }
-
-
-
     }
 }
